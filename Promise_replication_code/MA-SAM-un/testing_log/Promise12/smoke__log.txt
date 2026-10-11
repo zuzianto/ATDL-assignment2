@@ -1,0 +1,5 @@
+[19:50:47.330] Namespace(adapt_ckpt='../output/Promise12/smoke/train_best_model.pth', root_path='../data/Promise12/Foreslices', num_classes=2, img_size=512, stage='test', seed=1234, is_savenii=False, deterministic=1, ckpt='../checkpoint/sam_vit_b_01ec64.pth', vit_name='vit_b_new', cal_hd95=True, rank=32, scale=1.0, module='sam_fact_tt_image_encoder', empirical=False, output_dir='../output/Promise12/smoke/test')
+[19:50:54.897] Case070 - Dice: 0.8070, HD95: 4.0000
+[19:51:01.450] Case071 - Dice: 0.8136, HD95: 7.0711
+[19:51:08.476] Case072 - Dice: 0.8550, HD95: 3.6056
+[19:51:15.355] Case073 - Dice: 0.8874, HD95: 2.8284

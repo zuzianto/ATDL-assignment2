@@ -1,0 +1,33 @@
+[21:20:33.470] Namespace(adapt_ckpt='../output/Promise12/sugfw_28_seed1235/train_best_model.pth', root_path='../data/Promise12/Foreslices', num_classes=2, img_size=512, stage='test', seed=1235, is_savenii=False, deterministic=1, ckpt='../checkpoint/sam_vit_b_01ec64.pth', vit_name='vit_b_new', cal_hd95=True, rank=32, scale=1.0, module='sam_fact_tt_image_encoder', empirical=False, output_dir='../output/Promise12/sugfw_28_seed1235/test')
+[21:20:39.813] Case070 - Dice: 0.8426, HD95: 4.0000
+[21:20:45.221] Case071 - Dice: 0.9010, HD95: 2.0000
+[21:20:51.186] Case072 - Dice: 0.8577, HD95: 4.1231
+[21:20:57.159] Case073 - Dice: 0.8995, HD95: 3.0000
+[21:21:02.840] Case074 - Dice: 0.9064, HD95: 2.0000
+[21:21:08.787] Case075 - Dice: 0.9099, HD95: 2.2361
+[21:21:13.239] Case076 - Dice: 0.8294, HD95: 5.0000
+[21:21:18.622] Case077 - Dice: 0.8365, HD95: 5.0990
+[21:21:23.989] Case078 - Dice: 0.8475, HD95: 2.8284
+[21:21:29.637] Case079 - Dice: 0.8452, HD95: 3.0000
+[21:21:36.518] Case080 - Dice: 0.7932, HD95: 7.2801
+[21:21:44.538] Case081 - Dice: 0.8267, HD95: 4.5826
+[21:21:49.854] Case082 - Dice: 0.8177, HD95: 3.0000
+[21:21:56.779] Case083 - Dice: 0.8113, HD95: 5.3852
+[21:22:01.251] Case084 - Dice: 0.8897, HD95: 5.7446
+[21:22:06.007] Case085 - Dice: 0.8282, HD95: 4.0000
+[21:22:10.485] Case086 - Dice: 0.8847, HD95: 2.0000
+[21:22:15.595] Case087 - Dice: 0.8349, HD95: 3.7417
+[21:22:21.042] Case088 - Dice: 0.7718, HD95: 4.5826
+[21:22:26.125] Case089 - Dice: 0.9023, HD95: 2.0000
+[21:22:30.302] Case090 - Dice: 0.7393, HD95: 4.0000
+[21:22:35.104] Case091 - Dice: 0.8634, HD95: 2.2361
+[21:22:39.560] Case092 - Dice: 0.7077, HD95: 4.0000
+[21:22:44.608] Case093 - Dice: 0.7356, HD95: 3.1623
+[21:22:49.079] Case094 - Dice: 0.7387, HD95: 3.6056
+[21:22:54.174] Case095 - Dice: 0.9132, HD95: 2.0000
+[21:22:58.635] Case096 - Dice: 0.8656, HD95: 2.0000
+[21:23:03.864] Case097 - Dice: 0.8402, HD95: 2.2361
+[21:23:08.325] Case098 - Dice: 0.8026, HD95: 2.8284
+[21:23:12.174] Case099 - Dice: 0.6996, HD95: 3.3166
+[21:23:12.174] Case099 - Dice: 0.8314±0.0601, HD95: 3.4996±1.3113
+[21:23:12.176] Testing Finished!
