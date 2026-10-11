@@ -1,0 +1,29 @@
+[23:59:00.182] Namespace(adapt_ckpt='/work/SUGFW-Liver/SUGFW_Liver_UCloud/output/Liver/ratio0.0005_scale5_seed42/train_best_model.pth', root_path='/work/SUGFW-Liver/SUGFW_Liver_UCloud/data/Liver/Foreslices', num_classes=2, img_size=512, stage='test', seed=42, is_savenii=False, deterministic=1, ckpt='/work/SUGFW-Liver/SUGFW_Liver_UCloud/checkpoint/sam_vit_b_01ec64.pth', vit_name='vit_b_new', cal_hd95=True, rank=32, scale=1.0, module='sam_fact_tt_image_encoder', empirical=False, output_dir='/work/SUGFW-Liver/SUGFW_Liver_UCloud/output/Liver/ratio0.0005_scale5_seed42/test')
+[23:59:02.645] Case001 - Dice: 0.5305, HD95: 55.9732
+[23:59:12.565] Case002 - Dice: 0.4938, HD95: 79.9187
+[23:59:24.242] Case003 - Dice: 0.3955, HD95: 118.0889
+[23:59:42.351] Case004 - Dice: 0.5789, HD95: 88.1249
+[23:59:55.360] Case010 - Dice: 0.4903, HD95: 99.9850
+[00:00:08.280] Case012 - Dice: 0.4047, HD95: 103.9663
+[00:00:16.354] Case023 - Dice: 0.3815, HD95: 63.7966
+[00:00:24.127] Case029 - Dice: 0.4837, HD95: 57.0000
+[00:00:32.602] Case030 - Dice: 0.4596, HD95: 75.1332
+[00:00:40.403] Case044 - Dice: 0.4819, HD95: 88.3459
+[00:00:44.601] Case045 - Dice: 0.4571, HD95: 59.0339
+[00:00:48.790] Case061 - Dice: 0.4744, HD95: 55.4437
+[00:00:50.979] Case074 - Dice: 0.3891, HD95: 53.1131
+[00:00:55.002] Case078 - Dice: 0.5374, HD95: 72.4534
+[00:00:58.941] Case079 - Dice: 0.4440, HD95: 99.4435
+[00:01:12.344] Case082 - Dice: 0.4973, HD95: 68.7314
+[00:01:33.017] Case085 - Dice: 0.4543, HD95: 74.6592
+[00:01:45.139] Case088 - Dice: 0.5678, HD95: 93.0000
+[00:02:02.205] Case098 - Dice: 0.4183, HD95: 91.3510
+[00:02:22.113] Case100 - Dice: 0.5254, HD95: 95.6870
+[00:02:36.461] Case103 - Dice: 0.2794, HD95: 116.4689
+[00:02:49.930] Case112 - Dice: 0.5043, HD95: 92.9677
+[00:03:01.824] Case113 - Dice: 0.5195, HD95: 91.2195
+[00:03:17.090] Case116 - Dice: 0.5386, HD95: 83.3367
+[00:03:25.453] Case120 - Dice: 0.5709, HD95: 70.8661
+[00:03:33.266] Case125 - Dice: 0.5089, HD95: 55.8749
+[00:03:33.267] Case125 - Dice: 0.4764±0.0674, HD95: 80.9224±18.7403
+[00:03:33.271] Testing Finished!
