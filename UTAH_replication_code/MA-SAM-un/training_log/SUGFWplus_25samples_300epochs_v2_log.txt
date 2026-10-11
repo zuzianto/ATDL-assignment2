@@ -1,0 +1,665 @@
+[17:57:10.630] Namespace(root_path='../data/UTAH/Foreslices', csv_path='../data/UTAH/Foreslices/splits/my_select_25_scale6_un10.csv', output='../output/UTAH/SUGFWplus_25samples_300epochs_v2', num_classes=2, batch_size=16, n_gpu=1, base_lr=0.0008, train_max_epochs=300, deterministic=1, img_size=512, seed=1234, vit_name='vit_b_new', ckpt='../checkpoint/sam_vit_b_01ec64.pth', adapt_ckpt=None, rank=32, scale=1.0, warmup_period=300, module='sam_fact_tt_image_encoder', dice_param=0.8, mse_param=0.02, lr_exp=0.9, tf32=True, compile=False, warmup=True, AdamW=True)
+[17:57:10.635] max_iterations: 600 iterations per epoch: 2
+[17:57:13.311] iteration: 0 loss: 0.8156 loss_ce: 1.6650 loss_dice: 0.6032 loss_mse: 0.4987 lr: 0.0000027 mse_param: 0.0000667
+[17:57:13.705] iteration: 1 loss: 0.7362 loss_ce: 1.2692 loss_dice: 0.6028 loss_mse: 0.4961 lr: 0.0000053 mse_param: 0.0001333
+[17:57:14.418] iteration: 2 loss: 0.7518 loss_ce: 1.3615 loss_dice: 0.5992 loss_mse: 0.4969 lr: 0.0000080 mse_param: 0.0002000
+[17:57:14.606] iteration: 3 loss: 0.6617 loss_ce: 0.9680 loss_dice: 0.5849 loss_mse: 0.4898 lr: 0.0000107 mse_param: 0.0002667
+[17:57:15.304] iteration: 4 loss: 0.6414 loss_ce: 0.9003 loss_dice: 0.5765 loss_mse: 0.4848 lr: 0.0000133 mse_param: 0.0003333
+[17:57:15.518] iteration: 5 loss: 0.6000 loss_ce: 0.7020 loss_dice: 0.5743 loss_mse: 0.4810 lr: 0.0000160 mse_param: 0.0004000
+[17:57:16.237] iteration: 6 loss: 0.5493 loss_ce: 0.5551 loss_dice: 0.5476 loss_mse: 0.4715 lr: 0.0000187 mse_param: 0.0004667
+[17:57:16.383] iteration: 7 loss: 0.5558 loss_ce: 0.5625 loss_dice: 0.5539 loss_mse: 0.4641 lr: 0.0000213 mse_param: 0.0005333
+[17:57:17.044] iteration: 8 loss: 0.5406 loss_ce: 0.5265 loss_dice: 0.5438 loss_mse: 0.4529 lr: 0.0000240 mse_param: 0.0006000
+[17:57:17.181] iteration: 9 loss: 0.5239 loss_ce: 0.4773 loss_dice: 0.5352 loss_mse: 0.4399 lr: 0.0000267 mse_param: 0.0006667
+[17:57:17.838] iteration: 10 loss: 0.5349 loss_ce: 0.5109 loss_dice: 0.5405 loss_mse: 0.4287 lr: 0.0000293 mse_param: 0.0007333
+[17:57:17.985] iteration: 11 loss: 0.5093 loss_ce: 0.4337 loss_dice: 0.5278 loss_mse: 0.4176 lr: 0.0000320 mse_param: 0.0008000
+[17:57:18.633] iteration: 12 loss: 0.5070 loss_ce: 0.4338 loss_dice: 0.5249 loss_mse: 0.3984 lr: 0.0000347 mse_param: 0.0008667
+[17:57:18.771] iteration: 13 loss: 0.5120 loss_ce: 0.4411 loss_dice: 0.5293 loss_mse: 0.3838 lr: 0.0000373 mse_param: 0.0009333
+[17:57:19.344] iteration: 14 loss: 0.4795 loss_ce: 0.3558 loss_dice: 0.5100 loss_mse: 0.3685 lr: 0.0000400 mse_param: 0.0010000
+[17:57:19.509] iteration: 15 loss: 0.4883 loss_ce: 0.3566 loss_dice: 0.5207 loss_mse: 0.3502 lr: 0.0000427 mse_param: 0.0010667
+[17:57:20.149] iteration: 16 loss: 0.4738 loss_ce: 0.3283 loss_dice: 0.5097 loss_mse: 0.3325 lr: 0.0000453 mse_param: 0.0011333
+[17:57:20.309] iteration: 17 loss: 0.4745 loss_ce: 0.3148 loss_dice: 0.5139 loss_mse: 0.3168 lr: 0.0000480 mse_param: 0.0012000
+[17:57:20.977] iteration: 18 loss: 0.4642 loss_ce: 0.2965 loss_dice: 0.5056 loss_mse: 0.2972 lr: 0.0000507 mse_param: 0.0012667
+[17:57:21.139] iteration: 19 loss: 0.4606 loss_ce: 0.2802 loss_dice: 0.5052 loss_mse: 0.2783 lr: 0.0000533 mse_param: 0.0013333
+[17:57:21.740] iteration: 20 loss: 0.4538 loss_ce: 0.2687 loss_dice: 0.4996 loss_mse: 0.2587 lr: 0.0000560 mse_param: 0.0014000
+[17:57:21.877] iteration: 21 loss: 0.4512 loss_ce: 0.2463 loss_dice: 0.5019 loss_mse: 0.2468 lr: 0.0000587 mse_param: 0.0014667
+[17:57:22.448] iteration: 22 loss: 0.4455 loss_ce: 0.2362 loss_dice: 0.4974 loss_mse: 0.2261 lr: 0.0000613 mse_param: 0.0015333
+[17:57:22.585] iteration: 23 loss: 0.4417 loss_ce: 0.2273 loss_dice: 0.4949 loss_mse: 0.2149 lr: 0.0000640 mse_param: 0.0016000
+[17:57:23.241] iteration: 24 loss: 0.4354 loss_ce: 0.2037 loss_dice: 0.4929 loss_mse: 0.1961 lr: 0.0000667 mse_param: 0.0016667
+[17:57:23.377] iteration: 25 loss: 0.4323 loss_ce: 0.2036 loss_dice: 0.4891 loss_mse: 0.1837 lr: 0.0000693 mse_param: 0.0017333
+[17:57:24.035] iteration: 26 loss: 0.4242 loss_ce: 0.1802 loss_dice: 0.4849 loss_mse: 0.1705 lr: 0.0000720 mse_param: 0.0018000
+[17:57:24.211] iteration: 27 loss: 0.4273 loss_ce: 0.1560 loss_dice: 0.4948 loss_mse: 0.1585 lr: 0.0000747 mse_param: 0.0018667
+[17:57:24.839] iteration: 28 loss: 0.4167 loss_ce: 0.1430 loss_dice: 0.4848 loss_mse: 0.1469 lr: 0.0000773 mse_param: 0.0019333
+[17:57:25.000] iteration: 29 loss: 0.4125 loss_ce: 0.1337 loss_dice: 0.4818 loss_mse: 0.1388 lr: 0.0000800 mse_param: 0.0020000
+[17:57:25.734] iteration: 30 loss: 0.4126 loss_ce: 0.1205 loss_dice: 0.4853 loss_mse: 0.1288 lr: 0.0000827 mse_param: 0.0020667
+[17:57:25.882] iteration: 31 loss: 0.4090 loss_ce: 0.1070 loss_dice: 0.4842 loss_mse: 0.1207 lr: 0.0000853 mse_param: 0.0021333
+[17:57:26.527] iteration: 32 loss: 0.4106 loss_ce: 0.1140 loss_dice: 0.4845 loss_mse: 0.1101 lr: 0.0000880 mse_param: 0.0022000
+[17:57:26.687] iteration: 33 loss: 0.4063 loss_ce: 0.0774 loss_dice: 0.4883 loss_mse: 0.1106 lr: 0.0000907 mse_param: 0.0022667
+[17:57:27.333] iteration: 34 loss: 0.4057 loss_ce: 0.0921 loss_dice: 0.4838 loss_mse: 0.0998 lr: 0.0000933 mse_param: 0.0023333
+[17:57:27.511] iteration: 35 loss: 0.4023 loss_ce: 0.0853 loss_dice: 0.4812 loss_mse: 0.0922 lr: 0.0000960 mse_param: 0.0024000
+[17:57:28.048] iteration: 36 loss: 0.4022 loss_ce: 0.1019 loss_dice: 0.4769 loss_mse: 0.0900 lr: 0.0000987 mse_param: 0.0024667
+[17:57:28.191] iteration: 37 loss: 0.4000 loss_ce: 0.0681 loss_dice: 0.4827 loss_mse: 0.0813 lr: 0.0001013 mse_param: 0.0025333
+[17:57:28.746] iteration: 38 loss: 0.4026 loss_ce: 0.0943 loss_dice: 0.4794 loss_mse: 0.0800 lr: 0.0001040 mse_param: 0.0026000
+[17:57:28.883] iteration: 39 loss: 0.3987 loss_ce: 0.0798 loss_dice: 0.4782 loss_mse: 0.0761 lr: 0.0001067 mse_param: 0.0026667
+[17:57:29.440] iteration: 40 loss: 0.3987 loss_ce: 0.0931 loss_dice: 0.4748 loss_mse: 0.0731 lr: 0.0001093 mse_param: 0.0027333
+[17:57:29.603] iteration: 41 loss: 0.4005 loss_ce: 0.0862 loss_dice: 0.4788 loss_mse: 0.0701 lr: 0.0001120 mse_param: 0.0028000
+[17:57:30.247] iteration: 42 loss: 0.3984 loss_ce: 0.0673 loss_dice: 0.4810 loss_mse: 0.0658 lr: 0.0001147 mse_param: 0.0028667
+[17:57:30.417] iteration: 43 loss: 0.3966 loss_ce: 0.1065 loss_dice: 0.4689 loss_mse: 0.0694 lr: 0.0001173 mse_param: 0.0029333
+[17:57:31.019] iteration: 44 loss: 0.3991 loss_ce: 0.0891 loss_dice: 0.4764 loss_mse: 0.0627 lr: 0.0001200 mse_param: 0.0030000
+[17:57:31.210] iteration: 45 loss: 0.3951 loss_ce: 0.0679 loss_dice: 0.4766 loss_mse: 0.0660 lr: 0.0001227 mse_param: 0.0030667
+[17:57:31.833] iteration: 46 loss: 0.3957 loss_ce: 0.0804 loss_dice: 0.4742 loss_mse: 0.0616 lr: 0.0001253 mse_param: 0.0031333
+[17:57:31.986] iteration: 47 loss: 0.3924 loss_ce: 0.0858 loss_dice: 0.4687 loss_mse: 0.0632 lr: 0.0001280 mse_param: 0.0032000
+[17:57:32.552] iteration: 48 loss: 0.3937 loss_ce: 0.0819 loss_dice: 0.4715 loss_mse: 0.0586 lr: 0.0001307 mse_param: 0.0032667
+[17:57:32.711] iteration: 49 loss: 0.3888 loss_ce: 0.0764 loss_dice: 0.4666 loss_mse: 0.0631 lr: 0.0001333 mse_param: 0.0033333
+[17:57:33.333] iteration: 50 loss: 0.3920 loss_ce: 0.0784 loss_dice: 0.4702 loss_mse: 0.0600 lr: 0.0001360 mse_param: 0.0034000
+[17:57:33.487] iteration: 51 loss: 0.3865 loss_ce: 0.0823 loss_dice: 0.4623 loss_mse: 0.0561 lr: 0.0001387 mse_param: 0.0034667
+[17:57:34.134] iteration: 52 loss: 0.3869 loss_ce: 0.0814 loss_dice: 0.4630 loss_mse: 0.0581 lr: 0.0001413 mse_param: 0.0035333
+[17:57:34.283] iteration: 53 loss: 0.3880 loss_ce: 0.0697 loss_dice: 0.4673 loss_mse: 0.0586 lr: 0.0001440 mse_param: 0.0036000
+[17:57:34.937] iteration: 54 loss: 0.3872 loss_ce: 0.0780 loss_dice: 0.4642 loss_mse: 0.0573 lr: 0.0001467 mse_param: 0.0036667
+[17:57:35.080] iteration: 55 loss: 0.3853 loss_ce: 0.0987 loss_dice: 0.4566 loss_mse: 0.0559 lr: 0.0001493 mse_param: 0.0037333
+[17:57:35.775] iteration: 56 loss: 0.3818 loss_ce: 0.0925 loss_dice: 0.4538 loss_mse: 0.0536 lr: 0.0001520 mse_param: 0.0038000
+[17:57:35.932] iteration: 57 loss: 0.3859 loss_ce: 0.0712 loss_dice: 0.4642 loss_mse: 0.0607 lr: 0.0001547 mse_param: 0.0038667
+[17:57:36.544] iteration: 58 loss: 0.3788 loss_ce: 0.0921 loss_dice: 0.4501 loss_mse: 0.0543 lr: 0.0001573 mse_param: 0.0039333
+[17:57:36.705] iteration: 59 loss: 0.3811 loss_ce: 0.0666 loss_dice: 0.4594 loss_mse: 0.0558 lr: 0.0001600 mse_param: 0.0040000
+[17:57:37.424] iteration: 60 loss: 0.3744 loss_ce: 0.0849 loss_dice: 0.4465 loss_mse: 0.0500 lr: 0.0001627 mse_param: 0.0040667
+[17:57:37.604] iteration: 61 loss: 0.3724 loss_ce: 0.0687 loss_dice: 0.4481 loss_mse: 0.0610 lr: 0.0001653 mse_param: 0.0041333
+[17:57:38.225] iteration: 62 loss: 0.3729 loss_ce: 0.0764 loss_dice: 0.4467 loss_mse: 0.0519 lr: 0.0001680 mse_param: 0.0042000
+[17:57:38.409] iteration: 63 loss: 0.3671 loss_ce: 0.0741 loss_dice: 0.4401 loss_mse: 0.0543 lr: 0.0001707 mse_param: 0.0042667
+[17:57:39.058] iteration: 64 loss: 0.3693 loss_ce: 0.0702 loss_dice: 0.4438 loss_mse: 0.0528 lr: 0.0001733 mse_param: 0.0043333
+[17:57:39.225] iteration: 65 loss: 0.3574 loss_ce: 0.0773 loss_dice: 0.4271 loss_mse: 0.0525 lr: 0.0001760 mse_param: 0.0044000
+[17:57:39.880] iteration: 66 loss: 0.3614 loss_ce: 0.0774 loss_dice: 0.4322 loss_mse: 0.0529 lr: 0.0001787 mse_param: 0.0044667
+[17:57:40.034] iteration: 67 loss: 0.3466 loss_ce: 0.0576 loss_dice: 0.4186 loss_mse: 0.0509 lr: 0.0001813 mse_param: 0.0045333
+[17:57:40.654] iteration: 68 loss: 0.3515 loss_ce: 0.0720 loss_dice: 0.4211 loss_mse: 0.0520 lr: 0.0001840 mse_param: 0.0046000
+[17:57:40.813] iteration: 69 loss: 0.3457 loss_ce: 0.0737 loss_dice: 0.4134 loss_mse: 0.0526 lr: 0.0001867 mse_param: 0.0046667
+[17:57:41.441] iteration: 70 loss: 0.3387 loss_ce: 0.0724 loss_dice: 0.4050 loss_mse: 0.0509 lr: 0.0001893 mse_param: 0.0047333
+[17:57:41.623] iteration: 71 loss: 0.3483 loss_ce: 0.0484 loss_dice: 0.4230 loss_mse: 0.0523 lr: 0.0001920 mse_param: 0.0048000
+[17:57:42.334] iteration: 72 loss: 0.3206 loss_ce: 0.0658 loss_dice: 0.3840 loss_mse: 0.0542 lr: 0.0001947 mse_param: 0.0048667
+[17:57:42.507] iteration: 73 loss: 0.3041 loss_ce: 0.0528 loss_dice: 0.3666 loss_mse: 0.0465 lr: 0.0001973 mse_param: 0.0049333
+[17:57:43.137] iteration: 74 loss: 0.3072 loss_ce: 0.0543 loss_dice: 0.3701 loss_mse: 0.0515 lr: 0.0002000 mse_param: 0.0050000
+[17:57:43.305] iteration: 75 loss: 0.2909 loss_ce: 0.0487 loss_dice: 0.3512 loss_mse: 0.0492 lr: 0.0002027 mse_param: 0.0050667
+[17:57:43.943] iteration: 76 loss: 0.2916 loss_ce: 0.0545 loss_dice: 0.3506 loss_mse: 0.0496 lr: 0.0002053 mse_param: 0.0051333
+[17:57:44.090] iteration: 77 loss: 0.2847 loss_ce: 0.0588 loss_dice: 0.3408 loss_mse: 0.0529 lr: 0.0002080 mse_param: 0.0052000
+[17:57:44.737] iteration: 78 loss: 0.3560 loss_ce: 0.0546 loss_dice: 0.4310 loss_mse: 0.0514 lr: 0.0002107 mse_param: 0.0052667
+[17:57:44.890] iteration: 79 loss: 0.2865 loss_ce: 0.0778 loss_dice: 0.3383 loss_mse: 0.0491 lr: 0.0002133 mse_param: 0.0053333
+[17:57:45.533] iteration: 80 loss: 0.3418 loss_ce: 0.0881 loss_dice: 0.4050 loss_mse: 0.0495 lr: 0.0002160 mse_param: 0.0054000
+[17:57:45.695] iteration: 81 loss: 0.2928 loss_ce: 0.0794 loss_dice: 0.3458 loss_mse: 0.0510 lr: 0.0002187 mse_param: 0.0054667
+[17:57:46.335] iteration: 82 loss: 0.2921 loss_ce: 0.0532 loss_dice: 0.3515 loss_mse: 0.0487 lr: 0.0002213 mse_param: 0.0055333
+[17:57:46.501] iteration: 83 loss: 0.3077 loss_ce: 0.0563 loss_dice: 0.3702 loss_mse: 0.0517 lr: 0.0002240 mse_param: 0.0056000
+[17:57:47.136] iteration: 84 loss: 0.2748 loss_ce: 0.0482 loss_dice: 0.3312 loss_mse: 0.0466 lr: 0.0002267 mse_param: 0.0056667
+[17:57:47.313] iteration: 85 loss: 0.2580 loss_ce: 0.0650 loss_dice: 0.3059 loss_mse: 0.0568 lr: 0.0002293 mse_param: 0.0057333
+[17:57:47.964] iteration: 86 loss: 0.2887 loss_ce: 0.0610 loss_dice: 0.3453 loss_mse: 0.0486 lr: 0.0002320 mse_param: 0.0058000
+[17:57:48.113] iteration: 87 loss: 0.2640 loss_ce: 0.0493 loss_dice: 0.3173 loss_mse: 0.0502 lr: 0.0002347 mse_param: 0.0058667
+[17:57:48.738] iteration: 88 loss: 0.2578 loss_ce: 0.0537 loss_dice: 0.3085 loss_mse: 0.0463 lr: 0.0002373 mse_param: 0.0059333
+[17:57:48.894] iteration: 89 loss: 0.2682 loss_ce: 0.0637 loss_dice: 0.3189 loss_mse: 0.0542 lr: 0.0002400 mse_param: 0.0060000
+[17:57:49.549] iteration: 90 loss: 0.2155 loss_ce: 0.0373 loss_dice: 0.2596 loss_mse: 0.0504 lr: 0.0002427 mse_param: 0.0060667
+[17:57:49.721] iteration: 91 loss: 0.2441 loss_ce: 0.0429 loss_dice: 0.2941 loss_mse: 0.0454 lr: 0.0002453 mse_param: 0.0061333
+[17:57:50.334] iteration: 92 loss: 0.2134 loss_ce: 0.0488 loss_dice: 0.2541 loss_mse: 0.0493 lr: 0.0002480 mse_param: 0.0062000
+[17:57:50.485] iteration: 93 loss: 0.2694 loss_ce: 0.0660 loss_dice: 0.3199 loss_mse: 0.0456 lr: 0.0002507 mse_param: 0.0062667
+[17:57:51.147] iteration: 94 loss: 0.2396 loss_ce: 0.0526 loss_dice: 0.2859 loss_mse: 0.0479 lr: 0.0002533 mse_param: 0.0063333
+[17:57:51.305] iteration: 95 loss: 0.1895 loss_ce: 0.0337 loss_dice: 0.2281 loss_mse: 0.0465 lr: 0.0002560 mse_param: 0.0064000
+[17:57:51.940] iteration: 96 loss: 0.2558 loss_ce: 0.0491 loss_dice: 0.3071 loss_mse: 0.0475 lr: 0.0002587 mse_param: 0.0064667
+[17:57:52.094] iteration: 97 loss: 0.2247 loss_ce: 0.0287 loss_dice: 0.2733 loss_mse: 0.0490 lr: 0.0002613 mse_param: 0.0065333
+[17:57:52.738] iteration: 98 loss: 0.2023 loss_ce: 0.0407 loss_dice: 0.2422 loss_mse: 0.0494 lr: 0.0002640 mse_param: 0.0066000
+[17:57:52.893] iteration: 99 loss: 0.2417 loss_ce: 0.0384 loss_dice: 0.2921 loss_mse: 0.0448 lr: 0.0002667 mse_param: 0.0066667
+[17:57:53.625] iteration: 100 loss: 0.2227 loss_ce: 0.0300 loss_dice: 0.2705 loss_mse: 0.0470 lr: 0.0002693 mse_param: 0.0067333
+[17:57:53.811] iteration: 101 loss: 0.1759 loss_ce: 0.0335 loss_dice: 0.2110 loss_mse: 0.0489 lr: 0.0002720 mse_param: 0.0068000
+[17:57:54.440] iteration: 102 loss: 0.2102 loss_ce: 0.0399 loss_dice: 0.2523 loss_mse: 0.0464 lr: 0.0002747 mse_param: 0.0068667
+[17:57:54.613] iteration: 103 loss: 0.2321 loss_ce: 0.0322 loss_dice: 0.2817 loss_mse: 0.0475 lr: 0.0002773 mse_param: 0.0069333
+[17:57:55.230] iteration: 104 loss: 0.1983 loss_ce: 0.0372 loss_dice: 0.2382 loss_mse: 0.0457 lr: 0.0002800 mse_param: 0.0070000
+[17:57:55.386] iteration: 105 loss: 0.1475 loss_ce: 0.0339 loss_dice: 0.1754 loss_mse: 0.0514 lr: 0.0002827 mse_param: 0.0070667
+[17:57:56.035] iteration: 106 loss: 0.2284 loss_ce: 0.0379 loss_dice: 0.2756 loss_mse: 0.0486 lr: 0.0002853 mse_param: 0.0071333
+[17:57:56.209] iteration: 107 loss: 0.1378 loss_ce: 0.0254 loss_dice: 0.1655 loss_mse: 0.0441 lr: 0.0002880 mse_param: 0.0072000
+[17:57:56.845] iteration: 108 loss: 0.1980 loss_ce: 0.0372 loss_dice: 0.2378 loss_mse: 0.0473 lr: 0.0002907 mse_param: 0.0072667
+[17:57:56.988] iteration: 109 loss: 0.1340 loss_ce: 0.0323 loss_dice: 0.1590 loss_mse: 0.0467 lr: 0.0002933 mse_param: 0.0073333
+[17:57:57.644] iteration: 110 loss: 0.1584 loss_ce: 0.0243 loss_dice: 0.1915 loss_mse: 0.0466 lr: 0.0002960 mse_param: 0.0074000
+[17:57:57.794] iteration: 111 loss: 0.1210 loss_ce: 0.0244 loss_dice: 0.1447 loss_mse: 0.0464 lr: 0.0002987 mse_param: 0.0074667
+[17:57:58.457] iteration: 112 loss: 0.1211 loss_ce: 0.0246 loss_dice: 0.1448 loss_mse: 0.0466 lr: 0.0003013 mse_param: 0.0075333
+[17:57:58.625] iteration: 113 loss: 0.1353 loss_ce: 0.0256 loss_dice: 0.1623 loss_mse: 0.0470 lr: 0.0003040 mse_param: 0.0076000
+[17:57:59.343] iteration: 114 loss: 0.1624 loss_ce: 0.0280 loss_dice: 0.1956 loss_mse: 0.0435 lr: 0.0003067 mse_param: 0.0076667
+[17:57:59.486] iteration: 115 loss: 0.1450 loss_ce: 0.0253 loss_dice: 0.1745 loss_mse: 0.0499 lr: 0.0003093 mse_param: 0.0077333
+[17:58:00.132] iteration: 116 loss: 0.1401 loss_ce: 0.0224 loss_dice: 0.1691 loss_mse: 0.0453 lr: 0.0003120 mse_param: 0.0078000
+[17:58:00.283] iteration: 117 loss: 0.0917 loss_ce: 0.0230 loss_dice: 0.1085 loss_mse: 0.0453 lr: 0.0003147 mse_param: 0.0078667
+[17:58:00.933] iteration: 118 loss: 0.1123 loss_ce: 0.0237 loss_dice: 0.1339 loss_mse: 0.0441 lr: 0.0003173 mse_param: 0.0079333
+[17:58:01.089] iteration: 119 loss: 0.1124 loss_ce: 0.0169 loss_dice: 0.1358 loss_mse: 0.0481 lr: 0.0003200 mse_param: 0.0080000
+[17:58:01.741] iteration: 120 loss: 0.1046 loss_ce: 0.0219 loss_dice: 0.1249 loss_mse: 0.0458 lr: 0.0003227 mse_param: 0.0080667
+[17:58:01.884] iteration: 121 loss: 0.1010 loss_ce: 0.0185 loss_dice: 0.1212 loss_mse: 0.0445 lr: 0.0003253 mse_param: 0.0081333
+[17:58:02.531] iteration: 122 loss: 0.1104 loss_ce: 0.0214 loss_dice: 0.1321 loss_mse: 0.0468 lr: 0.0003280 mse_param: 0.0082000
+[17:58:02.678] iteration: 123 loss: 0.1934 loss_ce: 0.0239 loss_dice: 0.2353 loss_mse: 0.0448 lr: 0.0003307 mse_param: 0.0082667
+[17:58:03.343] iteration: 124 loss: 0.1655 loss_ce: 0.0400 loss_dice: 0.1964 loss_mse: 0.0435 lr: 0.0003333 mse_param: 0.0083333
+[17:58:03.488] iteration: 125 loss: 0.1752 loss_ce: 0.0442 loss_dice: 0.2075 loss_mse: 0.0490 lr: 0.0003360 mse_param: 0.0084000
+[17:58:04.136] iteration: 126 loss: 0.1421 loss_ce: 0.0252 loss_dice: 0.1709 loss_mse: 0.0458 lr: 0.0003387 mse_param: 0.0084667
+[17:58:04.286] iteration: 127 loss: 0.1652 loss_ce: 0.0263 loss_dice: 0.1994 loss_mse: 0.0464 lr: 0.0003413 mse_param: 0.0085333
+[17:58:04.928] iteration: 128 loss: 0.1487 loss_ce: 0.0294 loss_dice: 0.1780 loss_mse: 0.0455 lr: 0.0003440 mse_param: 0.0086000
+[17:58:05.113] iteration: 129 loss: 0.1754 loss_ce: 0.0391 loss_dice: 0.2090 loss_mse: 0.0450 lr: 0.0003467 mse_param: 0.0086667
+[17:58:05.741] iteration: 130 loss: 0.1137 loss_ce: 0.0180 loss_dice: 0.1372 loss_mse: 0.0435 lr: 0.0003493 mse_param: 0.0087333
+[17:58:05.910] iteration: 131 loss: 0.1304 loss_ce: 0.0209 loss_dice: 0.1572 loss_mse: 0.0452 lr: 0.0003520 mse_param: 0.0088000
+[17:58:06.531] iteration: 132 loss: 0.1130 loss_ce: 0.0206 loss_dice: 0.1357 loss_mse: 0.0421 lr: 0.0003547 mse_param: 0.0088667
+[17:58:06.683] iteration: 133 loss: 0.1535 loss_ce: 0.0206 loss_dice: 0.1862 loss_mse: 0.0481 lr: 0.0003573 mse_param: 0.0089333
+[17:58:07.322] iteration: 134 loss: 0.1629 loss_ce: 0.0305 loss_dice: 0.1955 loss_mse: 0.0401 lr: 0.0003600 mse_param: 0.0090000
+[17:58:07.502] iteration: 135 loss: 0.1324 loss_ce: 0.0218 loss_dice: 0.1595 loss_mse: 0.0502 lr: 0.0003627 mse_param: 0.0090667
+[17:58:08.134] iteration: 136 loss: 0.1583 loss_ce: 0.0276 loss_dice: 0.1905 loss_mse: 0.0432 lr: 0.0003653 mse_param: 0.0091333
+[17:58:08.270] iteration: 137 loss: 0.1318 loss_ce: 0.0164 loss_dice: 0.1601 loss_mse: 0.0496 lr: 0.0003680 mse_param: 0.0092000
+[17:58:08.946] iteration: 138 loss: 0.1530 loss_ce: 0.0214 loss_dice: 0.1855 loss_mse: 0.0420 lr: 0.0003707 mse_param: 0.0092667
+[17:58:09.095] iteration: 139 loss: 0.1067 loss_ce: 0.0247 loss_dice: 0.1266 loss_mse: 0.0526 lr: 0.0003733 mse_param: 0.0093333
+[17:58:09.734] iteration: 140 loss: 0.1146 loss_ce: 0.0232 loss_dice: 0.1369 loss_mse: 0.0443 lr: 0.0003760 mse_param: 0.0094000
+[17:58:09.876] iteration: 141 loss: 0.1522 loss_ce: 0.0170 loss_dice: 0.1855 loss_mse: 0.0414 lr: 0.0003787 mse_param: 0.0094667
+[17:58:10.540] iteration: 142 loss: 0.1070 loss_ce: 0.0187 loss_dice: 0.1286 loss_mse: 0.0424 lr: 0.0003813 mse_param: 0.0095333
+[17:58:10.716] iteration: 143 loss: 0.1021 loss_ce: 0.0158 loss_dice: 0.1231 loss_mse: 0.0508 lr: 0.0003840 mse_param: 0.0096000
+[17:58:11.339] iteration: 144 loss: 0.1044 loss_ce: 0.0161 loss_dice: 0.1260 loss_mse: 0.0442 lr: 0.0003867 mse_param: 0.0096667
+[17:58:11.488] iteration: 145 loss: 0.1593 loss_ce: 0.0261 loss_dice: 0.1920 loss_mse: 0.0485 lr: 0.0003893 mse_param: 0.0097333
+[17:58:12.135] iteration: 146 loss: 0.1502 loss_ce: 0.0297 loss_dice: 0.1798 loss_mse: 0.0438 lr: 0.0003920 mse_param: 0.0098000
+[17:58:12.278] iteration: 147 loss: 0.1291 loss_ce: 0.0296 loss_dice: 0.1534 loss_mse: 0.0477 lr: 0.0003947 mse_param: 0.0098667
+[17:58:12.925] iteration: 148 loss: 0.1048 loss_ce: 0.0250 loss_dice: 0.1242 loss_mse: 0.0451 lr: 0.0003973 mse_param: 0.0099333
+[17:58:13.063] iteration: 149 loss: 0.1574 loss_ce: 0.0163 loss_dice: 0.1922 loss_mse: 0.0409 lr: 0.0004000 mse_param: 0.0100000
+[17:58:13.641] iteration: 150 loss: 0.1713 loss_ce: 0.0268 loss_dice: 0.2068 loss_mse: 0.0441 lr: 0.0004027 mse_param: 0.0100667
+[17:58:13.781] iteration: 151 loss: 0.1486 loss_ce: 0.0216 loss_dice: 0.1798 loss_mse: 0.0443 lr: 0.0004053 mse_param: 0.0101333
+[17:58:14.434] iteration: 152 loss: 0.1430 loss_ce: 0.0329 loss_dice: 0.1700 loss_mse: 0.0421 lr: 0.0004080 mse_param: 0.0102000
+[17:58:14.579] iteration: 153 loss: 0.1528 loss_ce: 0.0149 loss_dice: 0.1867 loss_mse: 0.0447 lr: 0.0004107 mse_param: 0.0102667
+[17:58:15.235] iteration: 154 loss: 0.1337 loss_ce: 0.0182 loss_dice: 0.1621 loss_mse: 0.0419 lr: 0.0004133 mse_param: 0.0103333
+[17:58:15.376] iteration: 155 loss: 0.0838 loss_ce: 0.0109 loss_dice: 0.1015 loss_mse: 0.0419 lr: 0.0004160 mse_param: 0.0104000
+[17:58:15.942] iteration: 156 loss: 0.1064 loss_ce: 0.0237 loss_dice: 0.1265 loss_mse: 0.0427 lr: 0.0004187 mse_param: 0.0104667
+[17:58:16.109] iteration: 157 loss: 0.1661 loss_ce: 0.0312 loss_dice: 0.1993 loss_mse: 0.0435 lr: 0.0004213 mse_param: 0.0105333
+[17:58:16.724] iteration: 158 loss: 0.1309 loss_ce: 0.0339 loss_dice: 0.1546 loss_mse: 0.0416 lr: 0.0004240 mse_param: 0.0106000
+[17:58:16.913] iteration: 159 loss: 0.1090 loss_ce: 0.0189 loss_dice: 0.1308 loss_mse: 0.0510 lr: 0.0004267 mse_param: 0.0106667
+[17:58:17.541] iteration: 160 loss: 0.0800 loss_ce: 0.0183 loss_dice: 0.0949 loss_mse: 0.0386 lr: 0.0004293 mse_param: 0.0107333
+[17:58:17.714] iteration: 161 loss: 0.1371 loss_ce: 0.0188 loss_dice: 0.1660 loss_mse: 0.0459 lr: 0.0004320 mse_param: 0.0108000
+[17:58:18.334] iteration: 162 loss: 0.0805 loss_ce: 0.0167 loss_dice: 0.0959 loss_mse: 0.0456 lr: 0.0004347 mse_param: 0.0108667
+[17:58:18.493] iteration: 163 loss: 0.1143 loss_ce: 0.0143 loss_dice: 0.1387 loss_mse: 0.0448 lr: 0.0004373 mse_param: 0.0109333
+[17:58:19.134] iteration: 164 loss: 0.0905 loss_ce: 0.0157 loss_dice: 0.1086 loss_mse: 0.0425 lr: 0.0004400 mse_param: 0.0110000
+[17:58:19.299] iteration: 165 loss: 0.0989 loss_ce: 0.0183 loss_dice: 0.1184 loss_mse: 0.0422 lr: 0.0004427 mse_param: 0.0110667
+[17:58:19.866] iteration: 166 loss: 0.0828 loss_ce: 0.0160 loss_dice: 0.0990 loss_mse: 0.0391 lr: 0.0004453 mse_param: 0.0111333
+[17:58:20.014] iteration: 167 loss: 0.1222 loss_ce: 0.0134 loss_dice: 0.1488 loss_mse: 0.0444 lr: 0.0004480 mse_param: 0.0112000
+[17:58:20.642] iteration: 168 loss: 0.0769 loss_ce: 0.0130 loss_dice: 0.0923 loss_mse: 0.0417 lr: 0.0004507 mse_param: 0.0112667
+[17:58:20.795] iteration: 169 loss: 0.1059 loss_ce: 0.0150 loss_dice: 0.1280 loss_mse: 0.0419 lr: 0.0004533 mse_param: 0.0113333
+[17:58:21.441] iteration: 170 loss: 0.1094 loss_ce: 0.0147 loss_dice: 0.1326 loss_mse: 0.0396 lr: 0.0004560 mse_param: 0.0114000
+[17:58:21.595] iteration: 171 loss: 0.0593 loss_ce: 0.0111 loss_dice: 0.0708 loss_mse: 0.0376 lr: 0.0004587 mse_param: 0.0114667
+[17:58:22.226] iteration: 172 loss: 0.0936 loss_ce: 0.0126 loss_dice: 0.1133 loss_mse: 0.0401 lr: 0.0004613 mse_param: 0.0115333
+[17:58:22.418] iteration: 173 loss: 0.0593 loss_ce: 0.0105 loss_dice: 0.0708 loss_mse: 0.0424 lr: 0.0004640 mse_param: 0.0116000
+[17:58:23.034] iteration: 174 loss: 0.0979 loss_ce: 0.0187 loss_dice: 0.1172 loss_mse: 0.0377 lr: 0.0004667 mse_param: 0.0116667
+[17:58:23.188] iteration: 175 loss: 0.0808 loss_ce: 0.0167 loss_dice: 0.0962 loss_mse: 0.0409 lr: 0.0004693 mse_param: 0.0117333
+[17:58:23.837] iteration: 176 loss: 0.0865 loss_ce: 0.0117 loss_dice: 0.1046 loss_mse: 0.0388 lr: 0.0004720 mse_param: 0.0118000
+[17:58:24.010] iteration: 177 loss: 0.0515 loss_ce: 0.0120 loss_dice: 0.0608 loss_mse: 0.0408 lr: 0.0004747 mse_param: 0.0118667
+[17:58:24.641] iteration: 178 loss: 0.0788 loss_ce: 0.0107 loss_dice: 0.0953 loss_mse: 0.0399 lr: 0.0004773 mse_param: 0.0119333
+[17:58:24.781] iteration: 179 loss: 0.0964 loss_ce: 0.0220 loss_dice: 0.1144 loss_mse: 0.0400 lr: 0.0004800 mse_param: 0.0120000
+[17:58:25.428] iteration: 180 loss: 0.0567 loss_ce: 0.0107 loss_dice: 0.0678 loss_mse: 0.0337 lr: 0.0004827 mse_param: 0.0120667
+[17:58:25.580] iteration: 181 loss: 0.0828 loss_ce: 0.0129 loss_dice: 0.0996 loss_mse: 0.0479 lr: 0.0004853 mse_param: 0.0121333
+[17:58:26.234] iteration: 182 loss: 0.0721 loss_ce: 0.0140 loss_dice: 0.0861 loss_mse: 0.0360 lr: 0.0004880 mse_param: 0.0122000
+[17:58:26.381] iteration: 183 loss: 0.0770 loss_ce: 0.0096 loss_dice: 0.0931 loss_mse: 0.0446 lr: 0.0004907 mse_param: 0.0122667
+[17:58:27.035] iteration: 184 loss: 0.0683 loss_ce: 0.0119 loss_dice: 0.0818 loss_mse: 0.0356 lr: 0.0004933 mse_param: 0.0123333
+[17:58:27.184] iteration: 185 loss: 0.0585 loss_ce: 0.0091 loss_dice: 0.0701 loss_mse: 0.0437 lr: 0.0004960 mse_param: 0.0124000
+[17:58:27.836] iteration: 186 loss: 0.0608 loss_ce: 0.0088 loss_dice: 0.0732 loss_mse: 0.0382 lr: 0.0004987 mse_param: 0.0124667
+[17:58:28.010] iteration: 187 loss: 0.0810 loss_ce: 0.0149 loss_dice: 0.0970 loss_mse: 0.0348 lr: 0.0005013 mse_param: 0.0125333
+[17:58:28.633] iteration: 188 loss: 0.1028 loss_ce: 0.0107 loss_dice: 0.1252 loss_mse: 0.0379 lr: 0.0005040 mse_param: 0.0126000
+[17:58:28.787] iteration: 189 loss: 0.1321 loss_ce: 0.0403 loss_dice: 0.1544 loss_mse: 0.0374 lr: 0.0005067 mse_param: 0.0126667
+[17:58:29.442] iteration: 190 loss: 0.1731 loss_ce: 0.0469 loss_dice: 0.2041 loss_mse: 0.0349 lr: 0.0005093 mse_param: 0.0127333
+[17:58:29.603] iteration: 191 loss: 0.1642 loss_ce: 0.0139 loss_dice: 0.2010 loss_mse: 0.0484 lr: 0.0005120 mse_param: 0.0128000
+[17:58:30.237] iteration: 192 loss: 0.1596 loss_ce: 0.0191 loss_dice: 0.1942 loss_mse: 0.0362 lr: 0.0005147 mse_param: 0.0128667
+[17:58:30.391] iteration: 193 loss: 0.0782 loss_ce: 0.0159 loss_dice: 0.0930 loss_mse: 0.0431 lr: 0.0005173 mse_param: 0.0129333
+[17:58:31.036] iteration: 194 loss: 0.1101 loss_ce: 0.0166 loss_dice: 0.1328 loss_mse: 0.0370 lr: 0.0005200 mse_param: 0.0130000
+[17:58:31.203] iteration: 195 loss: 0.0889 loss_ce: 0.0163 loss_dice: 0.1063 loss_mse: 0.0418 lr: 0.0005227 mse_param: 0.0130667
+[17:58:31.837] iteration: 196 loss: 0.0884 loss_ce: 0.0138 loss_dice: 0.1064 loss_mse: 0.0384 lr: 0.0005253 mse_param: 0.0131333
+[17:58:32.001] iteration: 197 loss: 0.0755 loss_ce: 0.0115 loss_dice: 0.0908 loss_mse: 0.0404 lr: 0.0005280 mse_param: 0.0132000
+[17:58:32.636] iteration: 198 loss: 0.1055 loss_ce: 0.0164 loss_dice: 0.1272 loss_mse: 0.0339 lr: 0.0005307 mse_param: 0.0132667
+[17:58:32.791] iteration: 199 loss: 0.1086 loss_ce: 0.0190 loss_dice: 0.1303 loss_mse: 0.0389 lr: 0.0005333 mse_param: 0.0133333
+[17:58:35.683] Case080 - Dice: 0.8578, HD95: 10000.0000
+[17:58:38.499] Case081 - Dice: 0.6893, HD95: 10000.0000
+[17:58:40.974] Case082 - Dice: 0.6608, HD95: 10000.0000
+[17:58:43.956] Case083 - Dice: 0.8043, HD95: 10000.0000
+[17:58:46.718] Case084 - Dice: 0.7186, HD95: 10000.0000
+[17:58:48.878] Case085 - Dice: 0.7842, HD95: 10000.0000
+[17:58:51.669] Case086 - Dice: 0.6820, HD95: 10000.0000
+[17:58:53.990] Case087 - Dice: 0.6712, HD95: 10000.0000
+[17:58:56.384] Case088 - Dice: 0.6524, HD95: 10000.0000
+[17:58:58.926] Case089 - Dice: 0.7622, HD95: 10000.0000
+[17:59:01.425] Case090 - Dice: 0.8097, HD95: 10000.0000
+[17:59:04.394] Case091 - Dice: 0.6244, HD95: 10000.0000
+[17:59:06.599] Case092 - Dice: 0.7576, HD95: 10000.0000
+[17:59:08.902] Case093 - Dice: 0.6648, HD95: 10000.0000
+[17:59:11.132] Case094 - Dice: 0.7909, HD95: 10000.0000
+[17:59:13.359] Case095 - Dice: 0.7560, HD95: 10000.0000
+[17:59:16.022] Case096 - Dice: 0.4169, HD95: 10000.0000
+[17:59:18.857] Case097 - Dice: 0.7394, HD95: 10000.0000
+[17:59:21.248] Case098 - Dice: 0.7158, HD95: 10000.0000
+[17:59:23.595] Case099 - Dice: 0.7270, HD95: 10000.0000
+[17:59:23.595] Case099 - Dice: 0.7143±0.0907, HD95: 10000.0000±0.0000
+[17:59:24.774] iteration: 200 loss: 0.0819 loss_ce: 0.0115 loss_dice: 0.0989 loss_mse: 0.0360 lr: 0.0005360 mse_param: 0.0134000
+[17:59:24.917] iteration: 201 loss: 0.0883 loss_ce: 0.0176 loss_dice: 0.1053 loss_mse: 0.0397 lr: 0.0005387 mse_param: 0.0134667
+[17:59:25.628] iteration: 202 loss: 0.0810 loss_ce: 0.0170 loss_dice: 0.0964 loss_mse: 0.0371 lr: 0.0005413 mse_param: 0.0135333
+[17:59:25.777] iteration: 203 loss: 0.1649 loss_ce: 0.0248 loss_dice: 0.1991 loss_mse: 0.0468 lr: 0.0005440 mse_param: 0.0136000
+[17:59:26.428] iteration: 204 loss: 0.1054 loss_ce: 0.0155 loss_dice: 0.1272 loss_mse: 0.0398 lr: 0.0005467 mse_param: 0.0136667
+[17:59:26.579] iteration: 205 loss: 0.1007 loss_ce: 0.0171 loss_dice: 0.1208 loss_mse: 0.0434 lr: 0.0005493 mse_param: 0.0137333
+[17:59:27.345] iteration: 206 loss: 0.0849 loss_ce: 0.0129 loss_dice: 0.1023 loss_mse: 0.0354 lr: 0.0005520 mse_param: 0.0138000
+[17:59:27.490] iteration: 207 loss: 0.1600 loss_ce: 0.0198 loss_dice: 0.1945 loss_mse: 0.0318 lr: 0.0005547 mse_param: 0.0138667
+[17:59:28.203] iteration: 208 loss: 0.1352 loss_ce: 0.0285 loss_dice: 0.1613 loss_mse: 0.0371 lr: 0.0005573 mse_param: 0.0139333
+[17:59:28.322] iteration: 209 loss: 0.1632 loss_ce: 0.0284 loss_dice: 0.1963 loss_mse: 0.0373 lr: 0.0005600 mse_param: 0.0140000
+[17:59:28.936] iteration: 210 loss: 0.0692 loss_ce: 0.0119 loss_dice: 0.0829 loss_mse: 0.0346 lr: 0.0005627 mse_param: 0.0140667
+[17:59:29.085] iteration: 211 loss: 0.1018 loss_ce: 0.0123 loss_dice: 0.1235 loss_mse: 0.0349 lr: 0.0005653 mse_param: 0.0141333
+[17:59:29.711] iteration: 212 loss: 0.1204 loss_ce: 0.0200 loss_dice: 0.1448 loss_mse: 0.0339 lr: 0.0005680 mse_param: 0.0142000
+[17:59:29.852] iteration: 213 loss: 0.1045 loss_ce: 0.0113 loss_dice: 0.1272 loss_mse: 0.0369 lr: 0.0005707 mse_param: 0.0142667
+[17:59:30.447] iteration: 214 loss: 0.1011 loss_ce: 0.0218 loss_dice: 0.1203 loss_mse: 0.0352 lr: 0.0005733 mse_param: 0.0143333
+[17:59:30.626] iteration: 215 loss: 0.1494 loss_ce: 0.0256 loss_dice: 0.1797 loss_mse: 0.0332 lr: 0.0005760 mse_param: 0.0144000
+[17:59:31.237] iteration: 216 loss: 0.1247 loss_ce: 0.0176 loss_dice: 0.1509 loss_mse: 0.0319 lr: 0.0005787 mse_param: 0.0144667
+[17:59:31.377] iteration: 217 loss: 0.1057 loss_ce: 0.0228 loss_dice: 0.1259 loss_mse: 0.0302 lr: 0.0005813 mse_param: 0.0145333
+[17:59:32.034] iteration: 218 loss: 0.0957 loss_ce: 0.0185 loss_dice: 0.1142 loss_mse: 0.0425 lr: 0.0005840 mse_param: 0.0146000
+[17:59:32.178] iteration: 219 loss: 0.0579 loss_ce: 0.0122 loss_dice: 0.0688 loss_mse: 0.0303 lr: 0.0005867 mse_param: 0.0146667
+[17:59:32.836] iteration: 220 loss: 0.1091 loss_ce: 0.0157 loss_dice: 0.1319 loss_mse: 0.0311 lr: 0.0005893 mse_param: 0.0147333
+[17:59:32.974] iteration: 221 loss: 0.0699 loss_ce: 0.0147 loss_dice: 0.0829 loss_mse: 0.0386 lr: 0.0005920 mse_param: 0.0148000
+[17:59:33.621] iteration: 222 loss: 0.0642 loss_ce: 0.0105 loss_dice: 0.0770 loss_mse: 0.0305 lr: 0.0005947 mse_param: 0.0148667
+[17:59:33.764] iteration: 223 loss: 0.0760 loss_ce: 0.0120 loss_dice: 0.0914 loss_mse: 0.0352 lr: 0.0005973 mse_param: 0.0149333
+[17:59:34.441] iteration: 224 loss: 0.0592 loss_ce: 0.0114 loss_dice: 0.0706 loss_mse: 0.0317 lr: 0.0006000 mse_param: 0.0150000
+[17:59:34.576] iteration: 225 loss: 0.1139 loss_ce: 0.0137 loss_dice: 0.1383 loss_mse: 0.0348 lr: 0.0006027 mse_param: 0.0150667
+[17:59:35.227] iteration: 226 loss: 0.0864 loss_ce: 0.0140 loss_dice: 0.1040 loss_mse: 0.0310 lr: 0.0006053 mse_param: 0.0151333
+[17:59:35.374] iteration: 227 loss: 0.0671 loss_ce: 0.0113 loss_dice: 0.0803 loss_mse: 0.0422 lr: 0.0006080 mse_param: 0.0152000
+[17:59:36.032] iteration: 228 loss: 0.0659 loss_ce: 0.0134 loss_dice: 0.0784 loss_mse: 0.0299 lr: 0.0006107 mse_param: 0.0152667
+[17:59:36.172] iteration: 229 loss: 0.0930 loss_ce: 0.0125 loss_dice: 0.1124 loss_mse: 0.0395 lr: 0.0006133 mse_param: 0.0153333
+[17:59:36.837] iteration: 230 loss: 0.1553 loss_ce: 0.0201 loss_dice: 0.1885 loss_mse: 0.0310 lr: 0.0006160 mse_param: 0.0154000
+[17:59:36.984] iteration: 231 loss: 0.1436 loss_ce: 0.0254 loss_dice: 0.1724 loss_mse: 0.0370 lr: 0.0006187 mse_param: 0.0154667
+[17:59:37.638] iteration: 232 loss: 0.1110 loss_ce: 0.0225 loss_dice: 0.1325 loss_mse: 0.0331 lr: 0.0006213 mse_param: 0.0155333
+[17:59:37.766] iteration: 233 loss: 0.0845 loss_ce: 0.0140 loss_dice: 0.1014 loss_mse: 0.0372 lr: 0.0006240 mse_param: 0.0156000
+[17:59:38.431] iteration: 234 loss: 0.0915 loss_ce: 0.0167 loss_dice: 0.1096 loss_mse: 0.0320 lr: 0.0006267 mse_param: 0.0156667
+[17:59:38.579] iteration: 235 loss: 0.1157 loss_ce: 0.0150 loss_dice: 0.1402 loss_mse: 0.0333 lr: 0.0006293 mse_param: 0.0157333
+[17:59:39.247] iteration: 236 loss: 0.0645 loss_ce: 0.0113 loss_dice: 0.0772 loss_mse: 0.0310 lr: 0.0006320 mse_param: 0.0158000
+[17:59:39.402] iteration: 237 loss: 0.0917 loss_ce: 0.0124 loss_dice: 0.1108 loss_mse: 0.0353 lr: 0.0006347 mse_param: 0.0158667
+[17:59:40.035] iteration: 238 loss: 0.0854 loss_ce: 0.0166 loss_dice: 0.1019 loss_mse: 0.0314 lr: 0.0006373 mse_param: 0.0159333
+[17:59:40.182] iteration: 239 loss: 0.0772 loss_ce: 0.0082 loss_dice: 0.0938 loss_mse: 0.0295 lr: 0.0006400 mse_param: 0.0160000
+[17:59:40.837] iteration: 240 loss: 0.0887 loss_ce: 0.0124 loss_dice: 0.1071 loss_mse: 0.0319 lr: 0.0006427 mse_param: 0.0160667
+[17:59:40.982] iteration: 241 loss: 0.0634 loss_ce: 0.0139 loss_dice: 0.0751 loss_mse: 0.0321 lr: 0.0006453 mse_param: 0.0161333
+[17:59:41.560] iteration: 242 loss: 0.0584 loss_ce: 0.0129 loss_dice: 0.0692 loss_mse: 0.0284 lr: 0.0006480 mse_param: 0.0162000
+[17:59:41.708] iteration: 243 loss: 0.0817 loss_ce: 0.0110 loss_dice: 0.0985 loss_mse: 0.0417 lr: 0.0006507 mse_param: 0.0162667
+[17:59:42.333] iteration: 244 loss: 0.0490 loss_ce: 0.0099 loss_dice: 0.0582 loss_mse: 0.0294 lr: 0.0006533 mse_param: 0.0163333
+[17:59:42.508] iteration: 245 loss: 0.0895 loss_ce: 0.0110 loss_dice: 0.1085 loss_mse: 0.0283 lr: 0.0006560 mse_param: 0.0164000
+[17:59:43.137] iteration: 246 loss: 0.0735 loss_ce: 0.0098 loss_dice: 0.0886 loss_mse: 0.0347 lr: 0.0006587 mse_param: 0.0164667
+[17:59:43.285] iteration: 247 loss: 0.0753 loss_ce: 0.0133 loss_dice: 0.0902 loss_mse: 0.0309 lr: 0.0006613 mse_param: 0.0165333
+[17:59:43.945] iteration: 248 loss: 0.0526 loss_ce: 0.0073 loss_dice: 0.0632 loss_mse: 0.0337 lr: 0.0006640 mse_param: 0.0166000
+[17:59:44.082] iteration: 249 loss: 0.0803 loss_ce: 0.0138 loss_dice: 0.0963 loss_mse: 0.0304 lr: 0.0006667 mse_param: 0.0166667
+[17:59:44.779] iteration: 250 loss: 0.0663 loss_ce: 0.0104 loss_dice: 0.0797 loss_mse: 0.0280 lr: 0.0006693 mse_param: 0.0167333
+[17:59:44.926] iteration: 251 loss: 0.0682 loss_ce: 0.0098 loss_dice: 0.0821 loss_mse: 0.0340 lr: 0.0006720 mse_param: 0.0168000
+[17:59:45.554] iteration: 252 loss: 0.0764 loss_ce: 0.0116 loss_dice: 0.0919 loss_mse: 0.0309 lr: 0.0006747 mse_param: 0.0168667
+[17:59:45.701] iteration: 253 loss: 0.0903 loss_ce: 0.0172 loss_dice: 0.1080 loss_mse: 0.0291 lr: 0.0006773 mse_param: 0.0169333
+[17:59:46.412] iteration: 254 loss: 0.0932 loss_ce: 0.0105 loss_dice: 0.1133 loss_mse: 0.0260 lr: 0.0006800 mse_param: 0.0170000
+[17:59:46.562] iteration: 255 loss: 0.0616 loss_ce: 0.0124 loss_dice: 0.0731 loss_mse: 0.0384 lr: 0.0006827 mse_param: 0.0170667
+[17:59:47.242] iteration: 256 loss: 0.0546 loss_ce: 0.0097 loss_dice: 0.0653 loss_mse: 0.0265 lr: 0.0006853 mse_param: 0.0171333
+[17:59:47.429] iteration: 257 loss: 0.1005 loss_ce: 0.0118 loss_dice: 0.1220 loss_mse: 0.0322 lr: 0.0006880 mse_param: 0.0172000
+[17:59:48.029] iteration: 258 loss: 0.0915 loss_ce: 0.0142 loss_dice: 0.1100 loss_mse: 0.0362 lr: 0.0006907 mse_param: 0.0172667
+[17:59:48.199] iteration: 259 loss: 0.0487 loss_ce: 0.0093 loss_dice: 0.0579 loss_mse: 0.0294 lr: 0.0006933 mse_param: 0.0173333
+[17:59:48.834] iteration: 260 loss: 0.0751 loss_ce: 0.0141 loss_dice: 0.0897 loss_mse: 0.0318 lr: 0.0006960 mse_param: 0.0174000
+[17:59:48.978] iteration: 261 loss: 0.0703 loss_ce: 0.0093 loss_dice: 0.0849 loss_mse: 0.0275 lr: 0.0006987 mse_param: 0.0174667
+[17:59:49.652] iteration: 262 loss: 0.0572 loss_ce: 0.0108 loss_dice: 0.0680 loss_mse: 0.0343 lr: 0.0007013 mse_param: 0.0175333
+[17:59:49.799] iteration: 263 loss: 0.0723 loss_ce: 0.0117 loss_dice: 0.0868 loss_mse: 0.0274 lr: 0.0007040 mse_param: 0.0176000
+[17:59:50.433] iteration: 264 loss: 0.0454 loss_ce: 0.0092 loss_dice: 0.0537 loss_mse: 0.0331 lr: 0.0007067 mse_param: 0.0176667
+[17:59:50.607] iteration: 265 loss: 0.0873 loss_ce: 0.0090 loss_dice: 0.1062 loss_mse: 0.0294 lr: 0.0007093 mse_param: 0.0177333
+[17:59:51.236] iteration: 266 loss: 0.0520 loss_ce: 0.0111 loss_dice: 0.0616 loss_mse: 0.0281 lr: 0.0007120 mse_param: 0.0178000
+[17:59:51.390] iteration: 267 loss: 0.0873 loss_ce: 0.0076 loss_dice: 0.1065 loss_mse: 0.0323 lr: 0.0007147 mse_param: 0.0178667
+[17:59:52.040] iteration: 268 loss: 0.1153 loss_ce: 0.0156 loss_dice: 0.1395 loss_mse: 0.0324 lr: 0.0007173 mse_param: 0.0179333
+[17:59:52.202] iteration: 269 loss: 0.0651 loss_ce: 0.0121 loss_dice: 0.0775 loss_mse: 0.0401 lr: 0.0007200 mse_param: 0.0180000
+[17:59:52.837] iteration: 270 loss: 0.0925 loss_ce: 0.0194 loss_dice: 0.1100 loss_mse: 0.0348 lr: 0.0007227 mse_param: 0.0180667
+[17:59:52.979] iteration: 271 loss: 0.0498 loss_ce: 0.0088 loss_dice: 0.0594 loss_mse: 0.0297 lr: 0.0007253 mse_param: 0.0181333
+[17:59:53.616] iteration: 272 loss: 0.0924 loss_ce: 0.0123 loss_dice: 0.1118 loss_mse: 0.0259 lr: 0.0007280 mse_param: 0.0182000
+[17:59:53.759] iteration: 273 loss: 0.0729 loss_ce: 0.0137 loss_dice: 0.0870 loss_mse: 0.0313 lr: 0.0007307 mse_param: 0.0182667
+[17:59:54.427] iteration: 274 loss: 0.0820 loss_ce: 0.0124 loss_dice: 0.0988 loss_mse: 0.0269 lr: 0.0007333 mse_param: 0.0183333
+[17:59:54.599] iteration: 275 loss: 0.0493 loss_ce: 0.0093 loss_dice: 0.0585 loss_mse: 0.0362 lr: 0.0007360 mse_param: 0.0184000
+[17:59:55.238] iteration: 276 loss: 0.0744 loss_ce: 0.0154 loss_dice: 0.0885 loss_mse: 0.0279 lr: 0.0007387 mse_param: 0.0184667
+[17:59:55.371] iteration: 277 loss: 0.1075 loss_ce: 0.0112 loss_dice: 0.1309 loss_mse: 0.0279 lr: 0.0007413 mse_param: 0.0185333
+[17:59:56.034] iteration: 278 loss: 0.0897 loss_ce: 0.0193 loss_dice: 0.1067 loss_mse: 0.0281 lr: 0.0007440 mse_param: 0.0186000
+[17:59:56.213] iteration: 279 loss: 0.1110 loss_ce: 0.0179 loss_dice: 0.1335 loss_mse: 0.0292 lr: 0.0007467 mse_param: 0.0186667
+[17:59:56.819] iteration: 280 loss: 0.1321 loss_ce: 0.0169 loss_dice: 0.1602 loss_mse: 0.0284 lr: 0.0007493 mse_param: 0.0187333
+[17:59:57.009] iteration: 281 loss: 0.0838 loss_ce: 0.0170 loss_dice: 0.0997 loss_mse: 0.0375 lr: 0.0007520 mse_param: 0.0188000
+[17:59:57.630] iteration: 282 loss: 0.0843 loss_ce: 0.0163 loss_dice: 0.1004 loss_mse: 0.0372 lr: 0.0007547 mse_param: 0.0188667
+[17:59:57.767] iteration: 283 loss: 0.0988 loss_ce: 0.0147 loss_dice: 0.1191 loss_mse: 0.0295 lr: 0.0007573 mse_param: 0.0189333
+[17:59:58.432] iteration: 284 loss: 0.0859 loss_ce: 0.0121 loss_dice: 0.1037 loss_mse: 0.0299 lr: 0.0007600 mse_param: 0.0190000
+[17:59:58.568] iteration: 285 loss: 0.0932 loss_ce: 0.0163 loss_dice: 0.1114 loss_mse: 0.0415 lr: 0.0007627 mse_param: 0.0190667
+[17:59:59.179] iteration: 286 loss: 0.0758 loss_ce: 0.0114 loss_dice: 0.0913 loss_mse: 0.0278 lr: 0.0007653 mse_param: 0.0191333
+[17:59:59.301] iteration: 287 loss: 0.0953 loss_ce: 0.0136 loss_dice: 0.1146 loss_mse: 0.0429 lr: 0.0007680 mse_param: 0.0192000
+[17:59:59.910] iteration: 288 loss: 0.0922 loss_ce: 0.0139 loss_dice: 0.1111 loss_mse: 0.0280 lr: 0.0007707 mse_param: 0.0192667
+[18:00:00.033] iteration: 289 loss: 0.0655 loss_ce: 0.0105 loss_dice: 0.0784 loss_mse: 0.0346 lr: 0.0007733 mse_param: 0.0193333
+[18:00:00.654] iteration: 290 loss: 0.0761 loss_ce: 0.0160 loss_dice: 0.0903 loss_mse: 0.0348 lr: 0.0007760 mse_param: 0.0194000
+[18:00:00.804] iteration: 291 loss: 0.0939 loss_ce: 0.0093 loss_dice: 0.1143 loss_mse: 0.0332 lr: 0.0007787 mse_param: 0.0194667
+[18:00:01.434] iteration: 292 loss: 0.1200 loss_ce: 0.0161 loss_dice: 0.1452 loss_mse: 0.0298 lr: 0.0007813 mse_param: 0.0195333
+[18:00:01.604] iteration: 293 loss: 0.0690 loss_ce: 0.0176 loss_dice: 0.0810 loss_mse: 0.0331 lr: 0.0007840 mse_param: 0.0196000
+[18:00:02.239] iteration: 294 loss: 0.0979 loss_ce: 0.0126 loss_dice: 0.1184 loss_mse: 0.0342 lr: 0.0007867 mse_param: 0.0196667
+[18:00:02.391] iteration: 295 loss: 0.0644 loss_ce: 0.0131 loss_dice: 0.0765 loss_mse: 0.0288 lr: 0.0007893 mse_param: 0.0197333
+[18:00:03.034] iteration: 296 loss: 0.0649 loss_ce: 0.0101 loss_dice: 0.0779 loss_mse: 0.0291 lr: 0.0007920 mse_param: 0.0198000
+[18:00:03.182] iteration: 297 loss: 0.0864 loss_ce: 0.0160 loss_dice: 0.1031 loss_mse: 0.0335 lr: 0.0007947 mse_param: 0.0198667
+[18:00:03.856] iteration: 298 loss: 0.0670 loss_ce: 0.0112 loss_dice: 0.0801 loss_mse: 0.0321 lr: 0.0007973 mse_param: 0.0199333
+[18:00:03.994] iteration: 299 loss: 0.0893 loss_ce: 0.0119 loss_dice: 0.1080 loss_mse: 0.0269 lr: 0.0008000 mse_param: 0.0200000
+[18:00:04.572] iteration: 300 loss: 0.0612 loss_ce: 0.0112 loss_dice: 0.0729 loss_mse: 0.0320 lr: 0.0008000 mse_param: 0.0200000
+[18:00:04.707] iteration: 301 loss: 0.0553 loss_ce: 0.0076 loss_dice: 0.0664 loss_mse: 0.0321 lr: 0.0007988 mse_param: 0.0200000
+[18:00:05.332] iteration: 302 loss: 0.0889 loss_ce: 0.0135 loss_dice: 0.1070 loss_mse: 0.0301 lr: 0.0007976 mse_param: 0.0200000
+[18:00:05.468] iteration: 303 loss: 0.0478 loss_ce: 0.0086 loss_dice: 0.0567 loss_mse: 0.0352 lr: 0.0007964 mse_param: 0.0200000
+[18:00:06.119] iteration: 304 loss: 0.0786 loss_ce: 0.0113 loss_dice: 0.0947 loss_mse: 0.0269 lr: 0.0007952 mse_param: 0.0200000
+[18:00:06.266] iteration: 305 loss: 0.1468 loss_ce: 0.0291 loss_dice: 0.1756 loss_mse: 0.0272 lr: 0.0007940 mse_param: 0.0200000
+[18:00:06.934] iteration: 306 loss: 0.1111 loss_ce: 0.0235 loss_dice: 0.1321 loss_mse: 0.0354 lr: 0.0007928 mse_param: 0.0200000
+[18:00:07.090] iteration: 307 loss: 0.1508 loss_ce: 0.0161 loss_dice: 0.1836 loss_mse: 0.0334 lr: 0.0007916 mse_param: 0.0200000
+[18:00:07.741] iteration: 308 loss: 0.1388 loss_ce: 0.0313 loss_dice: 0.1649 loss_mse: 0.0325 lr: 0.0007904 mse_param: 0.0200000
+[18:00:07.882] iteration: 309 loss: 0.0819 loss_ce: 0.0179 loss_dice: 0.0972 loss_mse: 0.0292 lr: 0.0007892 mse_param: 0.0200000
+[18:00:08.543] iteration: 310 loss: 0.2045 loss_ce: 0.0291 loss_dice: 0.2477 loss_mse: 0.0303 lr: 0.0007880 mse_param: 0.0200000
+[18:00:08.690] iteration: 311 loss: 0.1409 loss_ce: 0.0218 loss_dice: 0.1698 loss_mse: 0.0326 lr: 0.0007868 mse_param: 0.0200000
+[18:00:09.334] iteration: 312 loss: 0.1214 loss_ce: 0.0309 loss_dice: 0.1432 loss_mse: 0.0318 lr: 0.0007856 mse_param: 0.0200000
+[18:00:09.472] iteration: 313 loss: 0.1055 loss_ce: 0.0155 loss_dice: 0.1273 loss_mse: 0.0286 lr: 0.0007844 mse_param: 0.0200000
+[18:00:10.130] iteration: 314 loss: 0.1374 loss_ce: 0.0228 loss_dice: 0.1654 loss_mse: 0.0277 lr: 0.0007832 mse_param: 0.0200000
+[18:00:10.265] iteration: 315 loss: 0.0697 loss_ce: 0.0067 loss_dice: 0.0846 loss_mse: 0.0322 lr: 0.0007820 mse_param: 0.0200000
+[18:00:10.945] iteration: 316 loss: 0.0656 loss_ce: 0.0111 loss_dice: 0.0785 loss_mse: 0.0260 lr: 0.0007808 mse_param: 0.0200000
+[18:00:11.118] iteration: 317 loss: 0.1352 loss_ce: 0.0194 loss_dice: 0.1635 loss_mse: 0.0264 lr: 0.0007796 mse_param: 0.0200000
+[18:00:11.733] iteration: 318 loss: 0.0758 loss_ce: 0.0102 loss_dice: 0.0914 loss_mse: 0.0306 lr: 0.0007784 mse_param: 0.0200000
+[18:00:11.882] iteration: 319 loss: 0.1429 loss_ce: 0.0187 loss_dice: 0.1733 loss_mse: 0.0255 lr: 0.0007772 mse_param: 0.0200000
+[18:00:12.505] iteration: 320 loss: 0.0949 loss_ce: 0.0138 loss_dice: 0.1145 loss_mse: 0.0269 lr: 0.0007760 mse_param: 0.0200000
+[18:00:12.658] iteration: 321 loss: 0.0752 loss_ce: 0.0174 loss_dice: 0.0889 loss_mse: 0.0290 lr: 0.0007748 mse_param: 0.0200000
+[18:00:13.337] iteration: 322 loss: 0.0913 loss_ce: 0.0197 loss_dice: 0.1084 loss_mse: 0.0287 lr: 0.0007736 mse_param: 0.0200000
+[18:00:13.509] iteration: 323 loss: 0.0799 loss_ce: 0.0115 loss_dice: 0.0962 loss_mse: 0.0310 lr: 0.0007723 mse_param: 0.0200000
+[18:00:14.123] iteration: 324 loss: 0.1355 loss_ce: 0.0134 loss_dice: 0.1654 loss_mse: 0.0278 lr: 0.0007711 mse_param: 0.0200000
+[18:00:14.262] iteration: 325 loss: 0.0808 loss_ce: 0.0190 loss_dice: 0.0953 loss_mse: 0.0379 lr: 0.0007699 mse_param: 0.0200000
+[18:00:14.833] iteration: 326 loss: 0.1266 loss_ce: 0.0253 loss_dice: 0.1513 loss_mse: 0.0271 lr: 0.0007687 mse_param: 0.0200000
+[18:00:15.015] iteration: 327 loss: 0.0742 loss_ce: 0.0121 loss_dice: 0.0890 loss_mse: 0.0289 lr: 0.0007675 mse_param: 0.0200000
+[18:00:15.630] iteration: 328 loss: 0.0963 loss_ce: 0.0142 loss_dice: 0.1159 loss_mse: 0.0366 lr: 0.0007663 mse_param: 0.0200000
+[18:00:15.781] iteration: 329 loss: 0.0766 loss_ce: 0.0116 loss_dice: 0.0921 loss_mse: 0.0332 lr: 0.0007651 mse_param: 0.0200000
+[18:00:16.394] iteration: 330 loss: 0.0992 loss_ce: 0.0128 loss_dice: 0.1203 loss_mse: 0.0242 lr: 0.0007639 mse_param: 0.0200000
+[18:00:16.533] iteration: 331 loss: 0.1773 loss_ce: 0.0328 loss_dice: 0.2126 loss_mse: 0.0329 lr: 0.0007627 mse_param: 0.0200000
+[18:00:17.143] iteration: 332 loss: 0.2538 loss_ce: 0.0410 loss_dice: 0.3063 loss_mse: 0.0273 lr: 0.0007615 mse_param: 0.0200000
+[18:00:17.279] iteration: 333 loss: 0.3575 loss_ce: 0.1603 loss_dice: 0.4061 loss_mse: 0.0319 lr: 0.0007603 mse_param: 0.0200000
+[18:00:17.933] iteration: 334 loss: 0.1400 loss_ce: 0.0402 loss_dice: 0.1644 loss_mse: 0.0242 lr: 0.0007591 mse_param: 0.0200000
+[18:00:18.071] iteration: 335 loss: 0.1736 loss_ce: 0.0260 loss_dice: 0.2094 loss_mse: 0.0451 lr: 0.0007579 mse_param: 0.0200000
+[18:00:18.690] iteration: 336 loss: 0.1103 loss_ce: 0.0190 loss_dice: 0.1323 loss_mse: 0.0283 lr: 0.0007567 mse_param: 0.0200000
+[18:00:18.807] iteration: 337 loss: 0.0679 loss_ce: 0.0145 loss_dice: 0.0806 loss_mse: 0.0267 lr: 0.0007555 mse_param: 0.0200000
+[18:00:19.415] iteration: 338 loss: 0.0991 loss_ce: 0.0176 loss_dice: 0.1188 loss_mse: 0.0290 lr: 0.0007543 mse_param: 0.0200000
+[18:00:19.550] iteration: 339 loss: 0.0834 loss_ce: 0.0123 loss_dice: 0.1004 loss_mse: 0.0293 lr: 0.0007530 mse_param: 0.0200000
+[18:00:20.226] iteration: 340 loss: 0.1171 loss_ce: 0.0160 loss_dice: 0.1417 loss_mse: 0.0281 lr: 0.0007518 mse_param: 0.0200000
+[18:00:20.367] iteration: 341 loss: 0.0977 loss_ce: 0.0150 loss_dice: 0.1176 loss_mse: 0.0338 lr: 0.0007506 mse_param: 0.0200000
+[18:00:20.929] iteration: 342 loss: 0.0824 loss_ce: 0.0112 loss_dice: 0.0994 loss_mse: 0.0277 lr: 0.0007494 mse_param: 0.0200000
+[18:00:21.069] iteration: 343 loss: 0.0819 loss_ce: 0.0194 loss_dice: 0.0967 loss_mse: 0.0330 lr: 0.0007482 mse_param: 0.0200000
+[18:00:21.736] iteration: 344 loss: 0.1302 loss_ce: 0.0171 loss_dice: 0.1579 loss_mse: 0.0256 lr: 0.0007470 mse_param: 0.0200000
+[18:00:21.877] iteration: 345 loss: 0.1483 loss_ce: 0.0489 loss_dice: 0.1725 loss_mse: 0.0278 lr: 0.0007458 mse_param: 0.0200000
+[18:00:22.543] iteration: 346 loss: 0.0895 loss_ce: 0.0120 loss_dice: 0.1082 loss_mse: 0.0306 lr: 0.0007446 mse_param: 0.0200000
+[18:00:22.682] iteration: 347 loss: 0.1471 loss_ce: 0.0367 loss_dice: 0.1740 loss_mse: 0.0301 lr: 0.0007434 mse_param: 0.0200000
+[18:00:23.311] iteration: 348 loss: 0.2258 loss_ce: 0.0419 loss_dice: 0.2711 loss_mse: 0.0278 lr: 0.0007422 mse_param: 0.0200000
+[18:00:23.451] iteration: 349 loss: 0.1988 loss_ce: 0.0402 loss_dice: 0.2375 loss_mse: 0.0378 lr: 0.0007410 mse_param: 0.0200000
+[18:00:24.046] iteration: 350 loss: 0.1776 loss_ce: 0.0271 loss_dice: 0.2144 loss_mse: 0.0318 lr: 0.0007397 mse_param: 0.0200000
+[18:00:24.183] iteration: 351 loss: 0.1443 loss_ce: 0.0342 loss_dice: 0.1712 loss_mse: 0.0267 lr: 0.0007385 mse_param: 0.0200000
+[18:00:24.797] iteration: 352 loss: 0.1056 loss_ce: 0.0254 loss_dice: 0.1249 loss_mse: 0.0309 lr: 0.0007373 mse_param: 0.0200000
+[18:00:24.929] iteration: 353 loss: 0.1642 loss_ce: 0.0142 loss_dice: 0.2009 loss_mse: 0.0304 lr: 0.0007361 mse_param: 0.0200000
+[18:00:25.525] iteration: 354 loss: 0.0782 loss_ce: 0.0144 loss_dice: 0.0934 loss_mse: 0.0315 lr: 0.0007349 mse_param: 0.0200000
+[18:00:25.673] iteration: 355 loss: 0.1033 loss_ce: 0.0136 loss_dice: 0.1251 loss_mse: 0.0231 lr: 0.0007337 mse_param: 0.0200000
+[18:00:26.275] iteration: 356 loss: 0.0795 loss_ce: 0.0158 loss_dice: 0.0947 loss_mse: 0.0321 lr: 0.0007325 mse_param: 0.0200000
+[18:00:26.414] iteration: 357 loss: 0.1026 loss_ce: 0.0118 loss_dice: 0.1244 loss_mse: 0.0376 lr: 0.0007313 mse_param: 0.0200000
+[18:00:27.043] iteration: 358 loss: 0.0781 loss_ce: 0.0113 loss_dice: 0.0941 loss_mse: 0.0292 lr: 0.0007301 mse_param: 0.0200000
+[18:00:27.182] iteration: 359 loss: 0.1355 loss_ce: 0.0222 loss_dice: 0.1631 loss_mse: 0.0310 lr: 0.0007288 mse_param: 0.0200000
+[18:00:27.829] iteration: 360 loss: 0.0777 loss_ce: 0.0124 loss_dice: 0.0933 loss_mse: 0.0292 lr: 0.0007276 mse_param: 0.0200000
+[18:00:27.962] iteration: 361 loss: 0.0815 loss_ce: 0.0118 loss_dice: 0.0981 loss_mse: 0.0336 lr: 0.0007264 mse_param: 0.0200000
+[18:00:28.548] iteration: 362 loss: 0.0737 loss_ce: 0.0123 loss_dice: 0.0882 loss_mse: 0.0305 lr: 0.0007252 mse_param: 0.0200000
+[18:00:28.689] iteration: 363 loss: 0.1792 loss_ce: 0.0260 loss_dice: 0.2169 loss_mse: 0.0247 lr: 0.0007240 mse_param: 0.0200000
+[18:00:29.338] iteration: 364 loss: 0.0706 loss_ce: 0.0131 loss_dice: 0.0841 loss_mse: 0.0316 lr: 0.0007228 mse_param: 0.0200000
+[18:00:29.471] iteration: 365 loss: 0.0746 loss_ce: 0.0116 loss_dice: 0.0895 loss_mse: 0.0324 lr: 0.0007216 mse_param: 0.0200000
+[18:00:30.143] iteration: 366 loss: 0.0676 loss_ce: 0.0108 loss_dice: 0.0812 loss_mse: 0.0245 lr: 0.0007203 mse_param: 0.0200000
+[18:00:30.279] iteration: 367 loss: 0.1115 loss_ce: 0.0136 loss_dice: 0.1352 loss_mse: 0.0317 lr: 0.0007191 mse_param: 0.0200000
+[18:00:30.839] iteration: 368 loss: 0.0802 loss_ce: 0.0131 loss_dice: 0.0963 loss_mse: 0.0262 lr: 0.0007179 mse_param: 0.0200000
+[18:00:30.986] iteration: 369 loss: 0.1131 loss_ce: 0.0211 loss_dice: 0.1353 loss_mse: 0.0322 lr: 0.0007167 mse_param: 0.0200000
+[18:00:31.630] iteration: 370 loss: 0.1017 loss_ce: 0.0169 loss_dice: 0.1221 loss_mse: 0.0324 lr: 0.0007155 mse_param: 0.0200000
+[18:00:31.760] iteration: 371 loss: 0.1328 loss_ce: 0.0139 loss_dice: 0.1619 loss_mse: 0.0266 lr: 0.0007143 mse_param: 0.0200000
+[18:00:32.334] iteration: 372 loss: 0.0835 loss_ce: 0.0150 loss_dice: 0.0999 loss_mse: 0.0292 lr: 0.0007131 mse_param: 0.0200000
+[18:00:32.469] iteration: 373 loss: 0.1261 loss_ce: 0.0258 loss_dice: 0.1506 loss_mse: 0.0272 lr: 0.0007118 mse_param: 0.0200000
+[18:00:33.136] iteration: 374 loss: 0.0900 loss_ce: 0.0209 loss_dice: 0.1065 loss_mse: 0.0291 lr: 0.0007106 mse_param: 0.0200000
+[18:00:33.290] iteration: 375 loss: 0.1445 loss_ce: 0.0141 loss_dice: 0.1761 loss_mse: 0.0393 lr: 0.0007094 mse_param: 0.0200000
+[18:00:33.932] iteration: 376 loss: 0.1211 loss_ce: 0.0165 loss_dice: 0.1465 loss_mse: 0.0285 lr: 0.0007082 mse_param: 0.0200000
+[18:00:34.070] iteration: 377 loss: 0.0787 loss_ce: 0.0107 loss_dice: 0.0948 loss_mse: 0.0333 lr: 0.0007070 mse_param: 0.0200000
+[18:00:34.719] iteration: 378 loss: 0.0995 loss_ce: 0.0157 loss_dice: 0.1197 loss_mse: 0.0293 lr: 0.0007058 mse_param: 0.0200000
+[18:00:34.862] iteration: 379 loss: 0.0815 loss_ce: 0.0186 loss_dice: 0.0964 loss_mse: 0.0346 lr: 0.0007045 mse_param: 0.0200000
+[18:00:35.542] iteration: 380 loss: 0.0953 loss_ce: 0.0157 loss_dice: 0.1145 loss_mse: 0.0286 lr: 0.0007033 mse_param: 0.0200000
+[18:00:35.688] iteration: 381 loss: 0.0771 loss_ce: 0.0136 loss_dice: 0.0923 loss_mse: 0.0288 lr: 0.0007021 mse_param: 0.0200000
+[18:00:36.319] iteration: 382 loss: 0.0669 loss_ce: 0.0113 loss_dice: 0.0800 loss_mse: 0.0314 lr: 0.0007009 mse_param: 0.0200000
+[18:00:36.479] iteration: 383 loss: 0.0766 loss_ce: 0.0110 loss_dice: 0.0923 loss_mse: 0.0283 lr: 0.0006997 mse_param: 0.0200000
+[18:00:37.236] iteration: 384 loss: 0.0718 loss_ce: 0.0132 loss_dice: 0.0858 loss_mse: 0.0285 lr: 0.0006985 mse_param: 0.0200000
+[18:00:37.384] iteration: 385 loss: 0.0988 loss_ce: 0.0157 loss_dice: 0.1190 loss_mse: 0.0243 lr: 0.0006972 mse_param: 0.0200000
+[18:00:38.135] iteration: 386 loss: 0.0854 loss_ce: 0.0134 loss_dice: 0.1027 loss_mse: 0.0291 lr: 0.0006960 mse_param: 0.0200000
+[18:00:38.273] iteration: 387 loss: 0.0605 loss_ce: 0.0106 loss_dice: 0.0723 loss_mse: 0.0252 lr: 0.0006948 mse_param: 0.0200000
+[18:00:38.940] iteration: 388 loss: 0.0485 loss_ce: 0.0100 loss_dice: 0.0574 loss_mse: 0.0303 lr: 0.0006936 mse_param: 0.0200000
+[18:00:39.100] iteration: 389 loss: 0.0984 loss_ce: 0.0104 loss_dice: 0.1198 loss_mse: 0.0258 lr: 0.0006924 mse_param: 0.0200000
+[18:00:39.740] iteration: 390 loss: 0.0736 loss_ce: 0.0114 loss_dice: 0.0885 loss_mse: 0.0257 lr: 0.0006911 mse_param: 0.0200000
+[18:00:39.877] iteration: 391 loss: 0.0767 loss_ce: 0.0116 loss_dice: 0.0923 loss_mse: 0.0296 lr: 0.0006899 mse_param: 0.0200000
+[18:00:40.519] iteration: 392 loss: 0.0685 loss_ce: 0.0111 loss_dice: 0.0822 loss_mse: 0.0256 lr: 0.0006887 mse_param: 0.0200000
+[18:00:40.675] iteration: 393 loss: 0.0828 loss_ce: 0.0138 loss_dice: 0.0993 loss_mse: 0.0296 lr: 0.0006875 mse_param: 0.0200000
+[18:00:41.335] iteration: 394 loss: 0.0716 loss_ce: 0.0121 loss_dice: 0.0858 loss_mse: 0.0289 lr: 0.0006863 mse_param: 0.0200000
+[18:00:41.477] iteration: 395 loss: 0.0469 loss_ce: 0.0080 loss_dice: 0.0560 loss_mse: 0.0252 lr: 0.0006850 mse_param: 0.0200000
+[18:00:42.129] iteration: 396 loss: 0.0622 loss_ce: 0.0073 loss_dice: 0.0753 loss_mse: 0.0264 lr: 0.0006838 mse_param: 0.0200000
+[18:00:42.272] iteration: 397 loss: 0.0598 loss_ce: 0.0115 loss_dice: 0.0713 loss_mse: 0.0234 lr: 0.0006826 mse_param: 0.0200000
+[18:00:42.942] iteration: 398 loss: 0.0766 loss_ce: 0.0139 loss_dice: 0.0916 loss_mse: 0.0281 lr: 0.0006814 mse_param: 0.0200000
+[18:00:43.104] iteration: 399 loss: 0.0864 loss_ce: 0.0111 loss_dice: 0.1046 loss_mse: 0.0247 lr: 0.0006802 mse_param: 0.0200000
+[18:00:45.911] Case080 - Dice: 0.8549, HD95: 10000.0000
+[18:00:48.497] Case081 - Dice: 0.7129, HD95: 10000.0000
+[18:00:50.915] Case082 - Dice: 0.6879, HD95: 10000.0000
+[18:00:53.755] Case083 - Dice: 0.8504, HD95: 10000.0000
+[18:00:56.520] Case084 - Dice: 0.8107, HD95: 10000.0000
+[18:00:58.657] Case085 - Dice: 0.7849, HD95: 10000.0000
+[18:01:01.305] Case086 - Dice: 0.7036, HD95: 10000.0000
+[18:01:03.383] Case087 - Dice: 0.7118, HD95: 10000.0000
+[18:01:05.664] Case088 - Dice: 0.7239, HD95: 10000.0000
+[18:01:07.975] Case089 - Dice: 0.7651, HD95: 10000.0000
+[18:01:10.644] Case090 - Dice: 0.8492, HD95: 10000.0000
+[18:01:13.557] Case091 - Dice: 0.7110, HD95: 10000.0000
+[18:01:15.732] Case092 - Dice: 0.8121, HD95: 10000.0000
+[18:01:18.101] Case093 - Dice: 0.6797, HD95: 10000.0000
+[18:01:20.372] Case094 - Dice: 0.8115, HD95: 10000.0000
+[18:01:22.564] Case095 - Dice: 0.7730, HD95: 10000.0000
+[18:01:25.251] Case096 - Dice: 0.7374, HD95: 10000.0000
+[18:01:28.014] Case097 - Dice: 0.7665, HD95: 10000.0000
+[18:01:30.614] Case098 - Dice: 0.7635, HD95: 10000.0000
+[18:01:33.088] Case099 - Dice: 0.7777, HD95: 10000.0000
+[18:01:33.089] Case099 - Dice: 0.7644±0.0536, HD95: 10000.0000±0.0000
+[18:01:34.145] iteration: 400 loss: 0.0582 loss_ce: 0.0101 loss_dice: 0.0696 loss_mse: 0.0241 lr: 0.0006789 mse_param: 0.0200000
+[18:01:34.284] iteration: 401 loss: 0.0948 loss_ce: 0.0116 loss_dice: 0.1147 loss_mse: 0.0349 lr: 0.0006777 mse_param: 0.0200000
+[18:01:34.931] iteration: 402 loss: 0.0730 loss_ce: 0.0089 loss_dice: 0.0885 loss_mse: 0.0240 lr: 0.0006765 mse_param: 0.0200000
+[18:01:35.097] iteration: 403 loss: 0.0666 loss_ce: 0.0128 loss_dice: 0.0793 loss_mse: 0.0276 lr: 0.0006753 mse_param: 0.0200000
+[18:01:35.753] iteration: 404 loss: 0.0597 loss_ce: 0.0076 loss_dice: 0.0721 loss_mse: 0.0263 lr: 0.0006740 mse_param: 0.0200000
+[18:01:35.897] iteration: 405 loss: 0.0335 loss_ce: 0.0072 loss_dice: 0.0394 loss_mse: 0.0296 lr: 0.0006728 mse_param: 0.0200000
+[18:01:36.542] iteration: 406 loss: 0.0625 loss_ce: 0.0122 loss_dice: 0.0745 loss_mse: 0.0245 lr: 0.0006716 mse_param: 0.0200000
+[18:01:36.686] iteration: 407 loss: 0.0804 loss_ce: 0.0095 loss_dice: 0.0975 loss_mse: 0.0288 lr: 0.0006704 mse_param: 0.0200000
+[18:01:37.349] iteration: 408 loss: 0.0610 loss_ce: 0.0109 loss_dice: 0.0728 loss_mse: 0.0265 lr: 0.0006691 mse_param: 0.0200000
+[18:01:37.485] iteration: 409 loss: 0.0745 loss_ce: 0.0083 loss_dice: 0.0905 loss_mse: 0.0251 lr: 0.0006679 mse_param: 0.0200000
+[18:01:38.127] iteration: 410 loss: 0.0551 loss_ce: 0.0087 loss_dice: 0.0660 loss_mse: 0.0258 lr: 0.0006667 mse_param: 0.0200000
+[18:01:38.293] iteration: 411 loss: 0.0650 loss_ce: 0.0084 loss_dice: 0.0785 loss_mse: 0.0247 lr: 0.0006655 mse_param: 0.0200000
+[18:01:39.033] iteration: 412 loss: 0.0651 loss_ce: 0.0067 loss_dice: 0.0791 loss_mse: 0.0240 lr: 0.0006643 mse_param: 0.0200000
+[18:01:39.192] iteration: 413 loss: 0.0456 loss_ce: 0.0110 loss_dice: 0.0536 loss_mse: 0.0286 lr: 0.0006630 mse_param: 0.0200000
+[18:01:39.843] iteration: 414 loss: 0.0495 loss_ce: 0.0098 loss_dice: 0.0589 loss_mse: 0.0224 lr: 0.0006618 mse_param: 0.0200000
+[18:01:39.985] iteration: 415 loss: 0.0718 loss_ce: 0.0132 loss_dice: 0.0857 loss_mse: 0.0288 lr: 0.0006606 mse_param: 0.0200000
+[18:01:40.637] iteration: 416 loss: 0.0750 loss_ce: 0.0097 loss_dice: 0.0906 loss_mse: 0.0256 lr: 0.0006593 mse_param: 0.0200000
+[18:01:40.794] iteration: 417 loss: 0.0350 loss_ce: 0.0070 loss_dice: 0.0410 loss_mse: 0.0372 lr: 0.0006581 mse_param: 0.0200000
+[18:01:41.435] iteration: 418 loss: 0.0511 loss_ce: 0.0089 loss_dice: 0.0610 loss_mse: 0.0268 lr: 0.0006569 mse_param: 0.0200000
+[18:01:41.581] iteration: 419 loss: 0.0784 loss_ce: 0.0083 loss_dice: 0.0953 loss_mse: 0.0272 lr: 0.0006557 mse_param: 0.0200000
+[18:01:42.206] iteration: 420 loss: 0.0633 loss_ce: 0.0115 loss_dice: 0.0757 loss_mse: 0.0252 lr: 0.0006544 mse_param: 0.0200000
+[18:01:42.371] iteration: 421 loss: 0.0700 loss_ce: 0.0116 loss_dice: 0.0838 loss_mse: 0.0339 lr: 0.0006532 mse_param: 0.0200000
+[18:01:43.018] iteration: 422 loss: 0.0532 loss_ce: 0.0103 loss_dice: 0.0633 loss_mse: 0.0265 lr: 0.0006520 mse_param: 0.0200000
+[18:01:43.165] iteration: 423 loss: 0.0539 loss_ce: 0.0095 loss_dice: 0.0644 loss_mse: 0.0280 lr: 0.0006508 mse_param: 0.0200000
+[18:01:43.827] iteration: 424 loss: 0.0632 loss_ce: 0.0105 loss_dice: 0.0758 loss_mse: 0.0270 lr: 0.0006495 mse_param: 0.0200000
+[18:01:43.989] iteration: 425 loss: 0.0481 loss_ce: 0.0095 loss_dice: 0.0570 loss_mse: 0.0286 lr: 0.0006483 mse_param: 0.0200000
+[18:01:44.635] iteration: 426 loss: 0.0717 loss_ce: 0.0100 loss_dice: 0.0866 loss_mse: 0.0237 lr: 0.0006471 mse_param: 0.0200000
+[18:01:44.776] iteration: 427 loss: 0.0818 loss_ce: 0.0119 loss_dice: 0.0984 loss_mse: 0.0323 lr: 0.0006458 mse_param: 0.0200000
+[18:01:45.439] iteration: 428 loss: 0.0549 loss_ce: 0.0098 loss_dice: 0.0655 loss_mse: 0.0276 lr: 0.0006446 mse_param: 0.0200000
+[18:01:45.589] iteration: 429 loss: 0.0486 loss_ce: 0.0088 loss_dice: 0.0579 loss_mse: 0.0229 lr: 0.0006434 mse_param: 0.0200000
+[18:01:46.231] iteration: 430 loss: 0.0591 loss_ce: 0.0115 loss_dice: 0.0703 loss_mse: 0.0263 lr: 0.0006422 mse_param: 0.0200000
+[18:01:46.371] iteration: 431 loss: 0.0374 loss_ce: 0.0060 loss_dice: 0.0447 loss_mse: 0.0232 lr: 0.0006409 mse_param: 0.0200000
+[18:01:47.026] iteration: 432 loss: 0.0489 loss_ce: 0.0082 loss_dice: 0.0585 loss_mse: 0.0243 lr: 0.0006397 mse_param: 0.0200000
+[18:01:47.166] iteration: 433 loss: 0.0486 loss_ce: 0.0078 loss_dice: 0.0582 loss_mse: 0.0230 lr: 0.0006385 mse_param: 0.0200000
+[18:01:47.739] iteration: 434 loss: 0.0742 loss_ce: 0.0118 loss_dice: 0.0892 loss_mse: 0.0230 lr: 0.0006372 mse_param: 0.0200000
+[18:01:47.889] iteration: 435 loss: 0.0537 loss_ce: 0.0083 loss_dice: 0.0643 loss_mse: 0.0293 lr: 0.0006360 mse_param: 0.0200000
+[18:01:48.536] iteration: 436 loss: 0.0444 loss_ce: 0.0076 loss_dice: 0.0530 loss_mse: 0.0239 lr: 0.0006348 mse_param: 0.0200000
+[18:01:48.685] iteration: 437 loss: 0.0524 loss_ce: 0.0065 loss_dice: 0.0632 loss_mse: 0.0255 lr: 0.0006335 mse_param: 0.0200000
+[18:01:49.336] iteration: 438 loss: 0.0524 loss_ce: 0.0089 loss_dice: 0.0626 loss_mse: 0.0276 lr: 0.0006323 mse_param: 0.0200000
+[18:01:49.516] iteration: 439 loss: 0.0868 loss_ce: 0.0098 loss_dice: 0.1055 loss_mse: 0.0249 lr: 0.0006311 mse_param: 0.0200000
+[18:01:50.152] iteration: 440 loss: 0.0536 loss_ce: 0.0099 loss_dice: 0.0640 loss_mse: 0.0228 lr: 0.0006298 mse_param: 0.0200000
+[18:01:50.293] iteration: 441 loss: 0.0379 loss_ce: 0.0074 loss_dice: 0.0449 loss_mse: 0.0268 lr: 0.0006286 mse_param: 0.0200000
+[18:01:50.908] iteration: 442 loss: 0.0707 loss_ce: 0.0098 loss_dice: 0.0853 loss_mse: 0.0246 lr: 0.0006274 mse_param: 0.0200000
+[18:01:51.050] iteration: 443 loss: 0.0492 loss_ce: 0.0081 loss_dice: 0.0589 loss_mse: 0.0218 lr: 0.0006262 mse_param: 0.0200000
+[18:01:51.638] iteration: 444 loss: 0.0415 loss_ce: 0.0073 loss_dice: 0.0494 loss_mse: 0.0271 lr: 0.0006249 mse_param: 0.0200000
+[18:01:51.786] iteration: 445 loss: 0.0598 loss_ce: 0.0069 loss_dice: 0.0726 loss_mse: 0.0175 lr: 0.0006237 mse_param: 0.0200000
+[18:01:52.428] iteration: 446 loss: 0.0415 loss_ce: 0.0070 loss_dice: 0.0496 loss_mse: 0.0222 lr: 0.0006224 mse_param: 0.0200000
+[18:01:52.563] iteration: 447 loss: 0.1442 loss_ce: 0.0162 loss_dice: 0.1754 loss_mse: 0.0322 lr: 0.0006212 mse_param: 0.0200000
+[18:01:53.151] iteration: 448 loss: 0.0745 loss_ce: 0.0120 loss_dice: 0.0895 loss_mse: 0.0237 lr: 0.0006200 mse_param: 0.0200000
+[18:01:53.287] iteration: 449 loss: 0.0894 loss_ce: 0.0161 loss_dice: 0.1072 loss_mse: 0.0238 lr: 0.0006187 mse_param: 0.0200000
+[18:01:53.924] iteration: 450 loss: 0.0764 loss_ce: 0.0119 loss_dice: 0.0919 loss_mse: 0.0241 lr: 0.0006175 mse_param: 0.0200000
+[18:01:54.079] iteration: 451 loss: 0.0556 loss_ce: 0.0094 loss_dice: 0.0666 loss_mse: 0.0241 lr: 0.0006163 mse_param: 0.0200000
+[18:01:54.731] iteration: 452 loss: 0.0751 loss_ce: 0.0102 loss_dice: 0.0907 loss_mse: 0.0228 lr: 0.0006150 mse_param: 0.0200000
+[18:01:54.874] iteration: 453 loss: 0.0614 loss_ce: 0.0091 loss_dice: 0.0738 loss_mse: 0.0279 lr: 0.0006138 mse_param: 0.0200000
+[18:01:55.527] iteration: 454 loss: 0.0614 loss_ce: 0.0105 loss_dice: 0.0735 loss_mse: 0.0250 lr: 0.0006126 mse_param: 0.0200000
+[18:01:55.664] iteration: 455 loss: 0.0532 loss_ce: 0.0087 loss_dice: 0.0635 loss_mse: 0.0330 lr: 0.0006113 mse_param: 0.0200000
+[18:01:56.316] iteration: 456 loss: 0.0483 loss_ce: 0.0096 loss_dice: 0.0573 loss_mse: 0.0271 lr: 0.0006101 mse_param: 0.0200000
+[18:01:56.465] iteration: 457 loss: 0.1189 loss_ce: 0.0125 loss_dice: 0.1447 loss_mse: 0.0305 lr: 0.0006089 mse_param: 0.0200000
+[18:01:57.168] iteration: 458 loss: 0.0568 loss_ce: 0.0100 loss_dice: 0.0680 loss_mse: 0.0222 lr: 0.0006076 mse_param: 0.0200000
+[18:01:57.312] iteration: 459 loss: 0.0530 loss_ce: 0.0075 loss_dice: 0.0636 loss_mse: 0.0300 lr: 0.0006064 mse_param: 0.0200000
+[18:01:57.938] iteration: 460 loss: 0.0490 loss_ce: 0.0096 loss_dice: 0.0583 loss_mse: 0.0236 lr: 0.0006051 mse_param: 0.0200000
+[18:01:58.069] iteration: 461 loss: 0.0980 loss_ce: 0.0117 loss_dice: 0.1189 loss_mse: 0.0226 lr: 0.0006039 mse_param: 0.0200000
+[18:01:58.729] iteration: 462 loss: 0.0611 loss_ce: 0.0112 loss_dice: 0.0730 loss_mse: 0.0252 lr: 0.0006027 mse_param: 0.0200000
+[18:01:58.870] iteration: 463 loss: 0.1128 loss_ce: 0.0093 loss_dice: 0.1380 loss_mse: 0.0299 lr: 0.0006014 mse_param: 0.0200000
+[18:01:59.539] iteration: 464 loss: 0.0629 loss_ce: 0.0081 loss_dice: 0.0760 loss_mse: 0.0240 lr: 0.0006002 mse_param: 0.0200000
+[18:01:59.687] iteration: 465 loss: 0.0714 loss_ce: 0.0122 loss_dice: 0.0856 loss_mse: 0.0268 lr: 0.0005990 mse_param: 0.0200000
+[18:02:00.335] iteration: 466 loss: 0.0596 loss_ce: 0.0109 loss_dice: 0.0712 loss_mse: 0.0236 lr: 0.0005977 mse_param: 0.0200000
+[18:02:00.481] iteration: 467 loss: 0.1088 loss_ce: 0.0185 loss_dice: 0.1307 loss_mse: 0.0311 lr: 0.0005965 mse_param: 0.0200000
+[18:02:01.138] iteration: 468 loss: 0.0736 loss_ce: 0.0118 loss_dice: 0.0884 loss_mse: 0.0266 lr: 0.0005952 mse_param: 0.0200000
+[18:02:01.284] iteration: 469 loss: 0.1856 loss_ce: 0.0187 loss_dice: 0.2267 loss_mse: 0.0245 lr: 0.0005940 mse_param: 0.0200000
+[18:02:01.933] iteration: 470 loss: 0.1504 loss_ce: 0.0321 loss_dice: 0.1794 loss_mse: 0.0246 lr: 0.0005928 mse_param: 0.0200000
+[18:02:02.072] iteration: 471 loss: 0.0970 loss_ce: 0.0194 loss_dice: 0.1157 loss_mse: 0.0281 lr: 0.0005915 mse_param: 0.0200000
+[18:02:02.732] iteration: 472 loss: 0.0862 loss_ce: 0.0142 loss_dice: 0.1034 loss_mse: 0.0287 lr: 0.0005903 mse_param: 0.0200000
+[18:02:02.880] iteration: 473 loss: 0.1215 loss_ce: 0.0190 loss_dice: 0.1464 loss_mse: 0.0280 lr: 0.0005890 mse_param: 0.0200000
+[18:02:03.531] iteration: 474 loss: 0.0667 loss_ce: 0.0130 loss_dice: 0.0795 loss_mse: 0.0243 lr: 0.0005878 mse_param: 0.0200000
+[18:02:03.673] iteration: 475 loss: 0.1013 loss_ce: 0.0148 loss_dice: 0.1221 loss_mse: 0.0329 lr: 0.0005865 mse_param: 0.0200000
+[18:02:04.328] iteration: 476 loss: 0.1424 loss_ce: 0.0226 loss_dice: 0.1716 loss_mse: 0.0265 lr: 0.0005853 mse_param: 0.0200000
+[18:02:04.483] iteration: 477 loss: 0.0922 loss_ce: 0.0123 loss_dice: 0.1114 loss_mse: 0.0288 lr: 0.0005841 mse_param: 0.0200000
+[18:02:05.133] iteration: 478 loss: 0.0514 loss_ce: 0.0108 loss_dice: 0.0609 loss_mse: 0.0248 lr: 0.0005828 mse_param: 0.0200000
+[18:02:05.313] iteration: 479 loss: 0.1050 loss_ce: 0.0156 loss_dice: 0.1267 loss_mse: 0.0301 lr: 0.0005816 mse_param: 0.0200000
+[18:02:05.941] iteration: 480 loss: 0.0479 loss_ce: 0.0092 loss_dice: 0.0571 loss_mse: 0.0220 lr: 0.0005803 mse_param: 0.0200000
+[18:02:06.086] iteration: 481 loss: 0.0704 loss_ce: 0.0085 loss_dice: 0.0852 loss_mse: 0.0282 lr: 0.0005791 mse_param: 0.0200000
+[18:02:06.751] iteration: 482 loss: 0.0657 loss_ce: 0.0087 loss_dice: 0.0793 loss_mse: 0.0259 lr: 0.0005778 mse_param: 0.0200000
+[18:02:06.892] iteration: 483 loss: 0.0549 loss_ce: 0.0109 loss_dice: 0.0653 loss_mse: 0.0230 lr: 0.0005766 mse_param: 0.0200000
+[18:02:07.533] iteration: 484 loss: 0.0494 loss_ce: 0.0058 loss_dice: 0.0597 loss_mse: 0.0249 lr: 0.0005754 mse_param: 0.0200000
+[18:02:07.665] iteration: 485 loss: 0.0921 loss_ce: 0.0201 loss_dice: 0.1093 loss_mse: 0.0306 lr: 0.0005741 mse_param: 0.0200000
+[18:02:08.334] iteration: 486 loss: 0.0613 loss_ce: 0.0091 loss_dice: 0.0737 loss_mse: 0.0283 lr: 0.0005729 mse_param: 0.0200000
+[18:02:08.482] iteration: 487 loss: 0.0997 loss_ce: 0.0137 loss_dice: 0.1207 loss_mse: 0.0215 lr: 0.0005716 mse_param: 0.0200000
+[18:02:09.137] iteration: 488 loss: 0.0619 loss_ce: 0.0095 loss_dice: 0.0744 loss_mse: 0.0225 lr: 0.0005704 mse_param: 0.0200000
+[18:02:09.279] iteration: 489 loss: 0.0678 loss_ce: 0.0095 loss_dice: 0.0818 loss_mse: 0.0232 lr: 0.0005691 mse_param: 0.0200000
+[18:02:09.922] iteration: 490 loss: 0.0665 loss_ce: 0.0126 loss_dice: 0.0793 loss_mse: 0.0265 lr: 0.0005679 mse_param: 0.0200000
+[18:02:10.074] iteration: 491 loss: 0.1045 loss_ce: 0.0136 loss_dice: 0.1266 loss_mse: 0.0249 lr: 0.0005666 mse_param: 0.0200000
+[18:02:10.723] iteration: 492 loss: 0.0475 loss_ce: 0.0078 loss_dice: 0.0568 loss_mse: 0.0260 lr: 0.0005654 mse_param: 0.0200000
+[18:02:10.855] iteration: 493 loss: 0.0654 loss_ce: 0.0067 loss_dice: 0.0795 loss_mse: 0.0220 lr: 0.0005641 mse_param: 0.0200000
+[18:02:11.535] iteration: 494 loss: 0.0588 loss_ce: 0.0089 loss_dice: 0.0707 loss_mse: 0.0217 lr: 0.0005629 mse_param: 0.0200000
+[18:02:11.670] iteration: 495 loss: 0.0794 loss_ce: 0.0130 loss_dice: 0.0953 loss_mse: 0.0260 lr: 0.0005616 mse_param: 0.0200000
+[18:02:12.316] iteration: 496 loss: 0.0579 loss_ce: 0.0076 loss_dice: 0.0700 loss_mse: 0.0203 lr: 0.0005604 mse_param: 0.0200000
+[18:02:12.464] iteration: 497 loss: 0.0473 loss_ce: 0.0087 loss_dice: 0.0563 loss_mse: 0.0275 lr: 0.0005592 mse_param: 0.0200000
+[18:02:13.129] iteration: 498 loss: 0.0552 loss_ce: 0.0081 loss_dice: 0.0665 loss_mse: 0.0219 lr: 0.0005579 mse_param: 0.0200000
+[18:02:13.292] iteration: 499 loss: 0.0631 loss_ce: 0.0088 loss_dice: 0.0761 loss_mse: 0.0216 lr: 0.0005567 mse_param: 0.0200000
+[18:02:13.886] iteration: 500 loss: 0.0594 loss_ce: 0.0108 loss_dice: 0.0709 loss_mse: 0.0220 lr: 0.0005554 mse_param: 0.0200000
+[18:02:14.012] iteration: 501 loss: 0.0979 loss_ce: 0.0107 loss_dice: 0.1191 loss_mse: 0.0235 lr: 0.0005542 mse_param: 0.0200000
+[18:02:14.600] iteration: 502 loss: 0.0812 loss_ce: 0.0096 loss_dice: 0.0985 loss_mse: 0.0226 lr: 0.0005529 mse_param: 0.0200000
+[18:02:14.719] iteration: 503 loss: 0.0442 loss_ce: 0.0086 loss_dice: 0.0525 loss_mse: 0.0261 lr: 0.0005517 mse_param: 0.0200000
+[18:02:15.333] iteration: 504 loss: 0.0619 loss_ce: 0.0097 loss_dice: 0.0744 loss_mse: 0.0217 lr: 0.0005504 mse_param: 0.0200000
+[18:02:15.475] iteration: 505 loss: 0.0533 loss_ce: 0.0080 loss_dice: 0.0641 loss_mse: 0.0215 lr: 0.0005492 mse_param: 0.0200000
+[18:02:16.142] iteration: 506 loss: 0.0577 loss_ce: 0.0094 loss_dice: 0.0692 loss_mse: 0.0208 lr: 0.0005479 mse_param: 0.0200000
+[18:02:16.294] iteration: 507 loss: 0.0874 loss_ce: 0.0083 loss_dice: 0.1066 loss_mse: 0.0251 lr: 0.0005466 mse_param: 0.0200000
+[18:02:16.927] iteration: 508 loss: 0.0402 loss_ce: 0.0082 loss_dice: 0.0476 loss_mse: 0.0216 lr: 0.0005454 mse_param: 0.0200000
+[18:02:17.069] iteration: 509 loss: 0.0916 loss_ce: 0.0089 loss_dice: 0.1117 loss_mse: 0.0257 lr: 0.0005441 mse_param: 0.0200000
+[18:02:17.671] iteration: 510 loss: 0.0344 loss_ce: 0.0061 loss_dice: 0.0409 loss_mse: 0.0209 lr: 0.0005429 mse_param: 0.0200000
+[18:02:17.799] iteration: 511 loss: 0.0681 loss_ce: 0.0102 loss_dice: 0.0821 loss_mse: 0.0202 lr: 0.0005416 mse_param: 0.0200000
+[18:02:18.430] iteration: 512 loss: 0.0578 loss_ce: 0.0072 loss_dice: 0.0699 loss_mse: 0.0217 lr: 0.0005404 mse_param: 0.0200000
+[18:02:18.567] iteration: 513 loss: 0.0388 loss_ce: 0.0072 loss_dice: 0.0461 loss_mse: 0.0239 lr: 0.0005391 mse_param: 0.0200000
+[18:02:19.206] iteration: 514 loss: 0.0436 loss_ce: 0.0073 loss_dice: 0.0521 loss_mse: 0.0233 lr: 0.0005379 mse_param: 0.0200000
+[18:02:19.354] iteration: 515 loss: 0.0556 loss_ce: 0.0081 loss_dice: 0.0669 loss_mse: 0.0212 lr: 0.0005366 mse_param: 0.0200000
+[18:02:20.014] iteration: 516 loss: 0.0520 loss_ce: 0.0089 loss_dice: 0.0622 loss_mse: 0.0238 lr: 0.0005354 mse_param: 0.0200000
+[18:02:20.215] iteration: 517 loss: 0.0509 loss_ce: 0.0086 loss_dice: 0.0609 loss_mse: 0.0220 lr: 0.0005341 mse_param: 0.0200000
+[18:02:20.830] iteration: 518 loss: 0.0667 loss_ce: 0.0114 loss_dice: 0.0800 loss_mse: 0.0219 lr: 0.0005329 mse_param: 0.0200000
+[18:02:20.965] iteration: 519 loss: 0.0625 loss_ce: 0.0082 loss_dice: 0.0755 loss_mse: 0.0272 lr: 0.0005316 mse_param: 0.0200000
+[18:02:21.606] iteration: 520 loss: 0.0441 loss_ce: 0.0065 loss_dice: 0.0529 loss_mse: 0.0214 lr: 0.0005303 mse_param: 0.0200000
+[18:02:21.762] iteration: 521 loss: 0.0613 loss_ce: 0.0102 loss_dice: 0.0735 loss_mse: 0.0193 lr: 0.0005291 mse_param: 0.0200000
+[18:02:22.346] iteration: 522 loss: 0.0414 loss_ce: 0.0063 loss_dice: 0.0496 loss_mse: 0.0227 lr: 0.0005278 mse_param: 0.0200000
+[18:02:22.482] iteration: 523 loss: 0.0530 loss_ce: 0.0070 loss_dice: 0.0639 loss_mse: 0.0213 lr: 0.0005266 mse_param: 0.0200000
+[18:02:23.130] iteration: 524 loss: 0.0465 loss_ce: 0.0065 loss_dice: 0.0559 loss_mse: 0.0232 lr: 0.0005253 mse_param: 0.0200000
+[18:02:23.270] iteration: 525 loss: 0.0558 loss_ce: 0.0082 loss_dice: 0.0672 loss_mse: 0.0206 lr: 0.0005241 mse_param: 0.0200000
+[18:02:23.865] iteration: 526 loss: 0.0450 loss_ce: 0.0076 loss_dice: 0.0539 loss_mse: 0.0210 lr: 0.0005228 mse_param: 0.0200000
+[18:02:24.007] iteration: 527 loss: 0.0469 loss_ce: 0.0067 loss_dice: 0.0563 loss_mse: 0.0256 lr: 0.0005215 mse_param: 0.0200000
+[18:02:24.633] iteration: 528 loss: 0.0439 loss_ce: 0.0070 loss_dice: 0.0526 loss_mse: 0.0236 lr: 0.0005203 mse_param: 0.0200000
+[18:02:24.782] iteration: 529 loss: 0.0431 loss_ce: 0.0053 loss_dice: 0.0522 loss_mse: 0.0164 lr: 0.0005190 mse_param: 0.0200000
+[18:02:25.426] iteration: 530 loss: 0.0394 loss_ce: 0.0062 loss_dice: 0.0473 loss_mse: 0.0189 lr: 0.0005178 mse_param: 0.0200000
+[18:02:25.568] iteration: 531 loss: 0.0470 loss_ce: 0.0061 loss_dice: 0.0566 loss_mse: 0.0232 lr: 0.0005165 mse_param: 0.0200000
+[18:02:26.216] iteration: 532 loss: 0.0428 loss_ce: 0.0071 loss_dice: 0.0513 loss_mse: 0.0202 lr: 0.0005152 mse_param: 0.0200000
+[18:02:26.349] iteration: 533 loss: 0.0606 loss_ce: 0.0075 loss_dice: 0.0733 loss_mse: 0.0219 lr: 0.0005140 mse_param: 0.0200000
+[18:02:26.939] iteration: 534 loss: 0.0440 loss_ce: 0.0072 loss_dice: 0.0528 loss_mse: 0.0164 lr: 0.0005127 mse_param: 0.0200000
+[18:02:27.066] iteration: 535 loss: 0.0444 loss_ce: 0.0058 loss_dice: 0.0534 loss_mse: 0.0234 lr: 0.0005115 mse_param: 0.0200000
+[18:02:27.738] iteration: 536 loss: 0.0452 loss_ce: 0.0052 loss_dice: 0.0547 loss_mse: 0.0208 lr: 0.0005102 mse_param: 0.0200000
+[18:02:27.870] iteration: 537 loss: 0.0326 loss_ce: 0.0069 loss_dice: 0.0385 loss_mse: 0.0222 lr: 0.0005089 mse_param: 0.0200000
+[18:02:28.452] iteration: 538 loss: 0.0402 loss_ce: 0.0069 loss_dice: 0.0480 loss_mse: 0.0208 lr: 0.0005077 mse_param: 0.0200000
+[18:02:28.586] iteration: 539 loss: 0.0532 loss_ce: 0.0062 loss_dice: 0.0645 loss_mse: 0.0206 lr: 0.0005064 mse_param: 0.0200000
+[18:02:29.233] iteration: 540 loss: 0.0342 loss_ce: 0.0069 loss_dice: 0.0406 loss_mse: 0.0184 lr: 0.0005052 mse_param: 0.0200000
+[18:02:29.379] iteration: 541 loss: 0.1194 loss_ce: 0.0085 loss_dice: 0.1466 loss_mse: 0.0206 lr: 0.0005039 mse_param: 0.0200000
+[18:02:30.036] iteration: 542 loss: 0.0469 loss_ce: 0.0069 loss_dice: 0.0564 loss_mse: 0.0231 lr: 0.0005026 mse_param: 0.0200000
+[18:02:30.176] iteration: 543 loss: 0.0505 loss_ce: 0.0063 loss_dice: 0.0611 loss_mse: 0.0195 lr: 0.0005014 mse_param: 0.0200000
+[18:02:30.737] iteration: 544 loss: 0.0331 loss_ce: 0.0060 loss_dice: 0.0394 loss_mse: 0.0202 lr: 0.0005001 mse_param: 0.0200000
+[18:02:30.875] iteration: 545 loss: 0.0756 loss_ce: 0.0058 loss_dice: 0.0925 loss_mse: 0.0220 lr: 0.0004988 mse_param: 0.0200000
+[18:02:31.520] iteration: 546 loss: 0.0415 loss_ce: 0.0064 loss_dice: 0.0498 loss_mse: 0.0183 lr: 0.0004976 mse_param: 0.0200000
+[18:02:31.700] iteration: 547 loss: 0.0293 loss_ce: 0.0049 loss_dice: 0.0348 loss_mse: 0.0228 lr: 0.0004963 mse_param: 0.0200000
+[18:02:32.357] iteration: 548 loss: 0.0476 loss_ce: 0.0071 loss_dice: 0.0572 loss_mse: 0.0202 lr: 0.0004950 mse_param: 0.0200000
+[18:02:32.491] iteration: 549 loss: 0.0431 loss_ce: 0.0063 loss_dice: 0.0517 loss_mse: 0.0201 lr: 0.0004938 mse_param: 0.0200000
+[18:02:33.140] iteration: 550 loss: 0.0423 loss_ce: 0.0051 loss_dice: 0.0511 loss_mse: 0.0219 lr: 0.0004925 mse_param: 0.0200000
+[18:02:33.282] iteration: 551 loss: 0.0438 loss_ce: 0.0076 loss_dice: 0.0523 loss_mse: 0.0223 lr: 0.0004912 mse_param: 0.0200000
+[18:02:33.936] iteration: 552 loss: 0.0358 loss_ce: 0.0063 loss_dice: 0.0427 loss_mse: 0.0192 lr: 0.0004900 mse_param: 0.0200000
+[18:02:34.089] iteration: 553 loss: 0.0513 loss_ce: 0.0065 loss_dice: 0.0619 loss_mse: 0.0228 lr: 0.0004887 mse_param: 0.0200000
+[18:02:34.731] iteration: 554 loss: 0.0295 loss_ce: 0.0053 loss_dice: 0.0350 loss_mse: 0.0187 lr: 0.0004874 mse_param: 0.0200000
+[18:02:34.905] iteration: 555 loss: 0.0683 loss_ce: 0.0062 loss_dice: 0.0831 loss_mse: 0.0269 lr: 0.0004862 mse_param: 0.0200000
+[18:02:35.534] iteration: 556 loss: 0.0361 loss_ce: 0.0063 loss_dice: 0.0430 loss_mse: 0.0202 lr: 0.0004849 mse_param: 0.0200000
+[18:02:35.718] iteration: 557 loss: 0.0484 loss_ce: 0.0055 loss_dice: 0.0586 loss_mse: 0.0205 lr: 0.0004836 mse_param: 0.0200000
+[18:02:36.438] iteration: 558 loss: 0.0370 loss_ce: 0.0056 loss_dice: 0.0442 loss_mse: 0.0234 lr: 0.0004824 mse_param: 0.0200000
+[18:02:36.612] iteration: 559 loss: 0.0427 loss_ce: 0.0061 loss_dice: 0.0514 loss_mse: 0.0193 lr: 0.0004811 mse_param: 0.0200000
+[18:02:37.334] iteration: 560 loss: 0.0439 loss_ce: 0.0052 loss_dice: 0.0530 loss_mse: 0.0207 lr: 0.0004798 mse_param: 0.0200000
+[18:02:37.488] iteration: 561 loss: 0.0255 loss_ce: 0.0053 loss_dice: 0.0299 loss_mse: 0.0234 lr: 0.0004786 mse_param: 0.0200000
+[18:02:38.238] iteration: 562 loss: 0.0560 loss_ce: 0.0065 loss_dice: 0.0678 loss_mse: 0.0210 lr: 0.0004773 mse_param: 0.0200000
+[18:02:38.400] iteration: 563 loss: 0.0281 loss_ce: 0.0061 loss_dice: 0.0330 loss_mse: 0.0205 lr: 0.0004760 mse_param: 0.0200000
+[18:02:39.037] iteration: 564 loss: 0.0373 loss_ce: 0.0055 loss_dice: 0.0447 loss_mse: 0.0212 lr: 0.0004747 mse_param: 0.0200000
+[18:02:39.196] iteration: 565 loss: 0.0273 loss_ce: 0.0047 loss_dice: 0.0325 loss_mse: 0.0212 lr: 0.0004735 mse_param: 0.0200000
+[18:02:39.846] iteration: 566 loss: 0.0519 loss_ce: 0.0066 loss_dice: 0.0627 loss_mse: 0.0203 lr: 0.0004722 mse_param: 0.0200000
+[18:02:40.007] iteration: 567 loss: 0.0301 loss_ce: 0.0058 loss_dice: 0.0356 loss_mse: 0.0204 lr: 0.0004709 mse_param: 0.0200000
+[18:02:40.652] iteration: 568 loss: 0.0446 loss_ce: 0.0059 loss_dice: 0.0538 loss_mse: 0.0199 lr: 0.0004697 mse_param: 0.0200000
+[18:02:40.790] iteration: 569 loss: 0.0307 loss_ce: 0.0058 loss_dice: 0.0363 loss_mse: 0.0233 lr: 0.0004684 mse_param: 0.0200000
+[18:02:41.438] iteration: 570 loss: 0.0449 loss_ce: 0.0073 loss_dice: 0.0537 loss_mse: 0.0210 lr: 0.0004671 mse_param: 0.0200000
+[18:02:41.609] iteration: 571 loss: 0.0373 loss_ce: 0.0050 loss_dice: 0.0448 loss_mse: 0.0202 lr: 0.0004658 mse_param: 0.0200000
+[18:02:42.337] iteration: 572 loss: 0.0408 loss_ce: 0.0059 loss_dice: 0.0490 loss_mse: 0.0216 lr: 0.0004646 mse_param: 0.0200000
+[18:02:42.489] iteration: 573 loss: 0.0453 loss_ce: 0.0082 loss_dice: 0.0541 loss_mse: 0.0197 lr: 0.0004633 mse_param: 0.0200000
+[18:02:43.136] iteration: 574 loss: 0.0315 loss_ce: 0.0057 loss_dice: 0.0375 loss_mse: 0.0210 lr: 0.0004620 mse_param: 0.0200000
+[18:02:43.284] iteration: 575 loss: 0.0506 loss_ce: 0.0055 loss_dice: 0.0614 loss_mse: 0.0191 lr: 0.0004607 mse_param: 0.0200000
+[18:02:43.940] iteration: 576 loss: 0.0302 loss_ce: 0.0052 loss_dice: 0.0359 loss_mse: 0.0205 lr: 0.0004595 mse_param: 0.0200000
+[18:02:44.112] iteration: 577 loss: 0.0373 loss_ce: 0.0045 loss_dice: 0.0450 loss_mse: 0.0226 lr: 0.0004582 mse_param: 0.0200000
+[18:02:44.749] iteration: 578 loss: 0.0366 loss_ce: 0.0056 loss_dice: 0.0438 loss_mse: 0.0230 lr: 0.0004569 mse_param: 0.0200000
+[18:02:44.894] iteration: 579 loss: 0.0286 loss_ce: 0.0044 loss_dice: 0.0342 loss_mse: 0.0177 lr: 0.0004556 mse_param: 0.0200000
+[18:02:45.543] iteration: 580 loss: 0.0417 loss_ce: 0.0052 loss_dice: 0.0503 loss_mse: 0.0203 lr: 0.0004543 mse_param: 0.0200000
+[18:02:45.683] iteration: 581 loss: 0.0378 loss_ce: 0.0068 loss_dice: 0.0450 loss_mse: 0.0226 lr: 0.0004531 mse_param: 0.0200000
+[18:02:46.400] iteration: 582 loss: 0.0296 loss_ce: 0.0047 loss_dice: 0.0353 loss_mse: 0.0205 lr: 0.0004518 mse_param: 0.0200000
+[18:02:46.587] iteration: 583 loss: 0.0375 loss_ce: 0.0052 loss_dice: 0.0450 loss_mse: 0.0204 lr: 0.0004505 mse_param: 0.0200000
+[18:02:47.234] iteration: 584 loss: 0.0369 loss_ce: 0.0059 loss_dice: 0.0442 loss_mse: 0.0210 lr: 0.0004492 mse_param: 0.0200000
+[18:02:47.387] iteration: 585 loss: 0.0328 loss_ce: 0.0053 loss_dice: 0.0391 loss_mse: 0.0235 lr: 0.0004480 mse_param: 0.0200000
+[18:02:48.042] iteration: 586 loss: 0.0289 loss_ce: 0.0043 loss_dice: 0.0346 loss_mse: 0.0195 lr: 0.0004467 mse_param: 0.0200000
+[18:02:48.190] iteration: 587 loss: 0.0368 loss_ce: 0.0068 loss_dice: 0.0439 loss_mse: 0.0178 lr: 0.0004454 mse_param: 0.0200000
+[18:02:48.842] iteration: 588 loss: 0.0376 loss_ce: 0.0052 loss_dice: 0.0453 loss_mse: 0.0168 lr: 0.0004441 mse_param: 0.0200000
+[18:02:49.027] iteration: 589 loss: 0.0301 loss_ce: 0.0062 loss_dice: 0.0355 loss_mse: 0.0207 lr: 0.0004428 mse_param: 0.0200000
+[18:02:49.637] iteration: 590 loss: 0.0430 loss_ce: 0.0049 loss_dice: 0.0521 loss_mse: 0.0177 lr: 0.0004415 mse_param: 0.0200000
+[18:02:49.812] iteration: 591 loss: 0.0243 loss_ce: 0.0048 loss_dice: 0.0287 loss_mse: 0.0203 lr: 0.0004403 mse_param: 0.0200000
+[18:02:50.516] iteration: 592 loss: 0.0319 loss_ce: 0.0045 loss_dice: 0.0382 loss_mse: 0.0214 lr: 0.0004390 mse_param: 0.0200000
+[18:02:50.665] iteration: 593 loss: 0.0417 loss_ce: 0.0057 loss_dice: 0.0502 loss_mse: 0.0216 lr: 0.0004377 mse_param: 0.0200000
+[18:02:51.245] iteration: 594 loss: 0.0335 loss_ce: 0.0045 loss_dice: 0.0401 loss_mse: 0.0226 lr: 0.0004364 mse_param: 0.0200000
+[18:02:51.381] iteration: 595 loss: 0.0260 loss_ce: 0.0050 loss_dice: 0.0308 loss_mse: 0.0196 lr: 0.0004351 mse_param: 0.0200000
+[18:02:52.029] iteration: 596 loss: 0.0279 loss_ce: 0.0046 loss_dice: 0.0332 loss_mse: 0.0200 lr: 0.0004339 mse_param: 0.0200000
+[18:02:52.183] iteration: 597 loss: 0.0556 loss_ce: 0.0059 loss_dice: 0.0675 loss_mse: 0.0182 lr: 0.0004326 mse_param: 0.0200000
+[18:02:52.831] iteration: 598 loss: 0.0293 loss_ce: 0.0053 loss_dice: 0.0348 loss_mse: 0.0208 lr: 0.0004313 mse_param: 0.0200000
+[18:02:52.968] iteration: 599 loss: 0.0337 loss_ce: 0.0045 loss_dice: 0.0406 loss_mse: 0.0178 lr: 0.0004300 mse_param: 0.0200000
+[18:02:56.035] Case080 - Dice: 0.9003, HD95: 10000.0000
+[18:02:58.928] Case081 - Dice: 0.8487, HD95: 10000.0000
+[18:03:01.314] Case082 - Dice: 0.7617, HD95: 10000.0000
+[18:03:04.459] Case083 - Dice: 0.8779, HD95: 10000.0000
+[18:03:07.371] Case084 - Dice: 0.8333, HD95: 10000.0000
+[18:03:09.678] Case085 - Dice: 0.8669, HD95: 10000.0000
+[18:03:12.348] Case086 - Dice: 0.7428, HD95: 10000.0000
+[18:03:14.565] Case087 - Dice: 0.7930, HD95: 10000.0000
+[18:03:17.081] Case088 - Dice: 0.8278, HD95: 10000.0000
+[18:03:19.534] Case089 - Dice: 0.8598, HD95: 10000.0000
+[18:03:22.400] Case090 - Dice: 0.9044, HD95: 10000.0000
+[18:03:25.400] Case091 - Dice: 0.7442, HD95: 10000.0000
+[18:03:27.855] Case092 - Dice: 0.8773, HD95: 10000.0000
+[18:03:30.377] Case093 - Dice: 0.8161, HD95: 10000.0000
+[18:03:32.689] Case094 - Dice: 0.8542, HD95: 10000.0000
+[18:03:34.926] Case095 - Dice: 0.8593, HD95: 10000.0000
+[18:03:37.702] Case096 - Dice: 0.5452, HD95: 10000.0000
+[18:03:40.522] Case097 - Dice: 0.8470, HD95: 10000.0000
+[18:03:43.045] Case098 - Dice: 0.7256, HD95: 10000.0000
+[18:03:45.640] Case099 - Dice: 0.7950, HD95: 10000.0000
+[18:03:45.640] Case099 - Dice: 0.8140±0.0802, HD95: 10000.0000±0.0000
