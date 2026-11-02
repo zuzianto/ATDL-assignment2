@@ -1,1 +1,0 @@
-python select_samples.py
