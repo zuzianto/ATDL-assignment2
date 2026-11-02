@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyc
+
+# Virtual environments
+.venv/
+venv/
+
+# Data and model checkpoints
+data/*
+checkpoint/*
+
+# Generated outputs and logs
+output/
+training_log/
+testing_log/
+
+# Temporary and backup files
+*.backup
+*.bak
+*.tmp
+
+# Package metadata
+*.egg-info/
